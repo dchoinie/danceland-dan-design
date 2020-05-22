@@ -1,0 +1,36 @@
+@tailwind base;
+
+p,
+ul,
+li,
+a {
+  font-family: "Solway";
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.geist {
+  font-family: "Geist";
+}
+
+.notable {
+  font-family: "Notable";
+}
+
+.solway {
+  font-family: "Solway";
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
