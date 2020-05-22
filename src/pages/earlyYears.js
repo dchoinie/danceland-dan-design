@@ -53,7 +53,7 @@ const EarlyYears = ({ data }) => {
                 key={node.id}
                 className="flex w-full my-6 bg-white shadow-lg border border-gray-200 p-6 rounded-md"
               >
-                <div className="flex w-1/2">
+                <div className="flex justify-center w-1/2">
                   {node.data.img1 && <img src={node.data.img1[0].url} alt="" />}
                 </div>
                 <div className="flex w-1/2 flex-col justify-center items-center order-first">
