@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Texture from "../images/textures/vintage_speckles.png"
 
 export const earlyYearsQuery = graphql`
   {
@@ -40,79 +41,29 @@ export const earlyYearsQuery = graphql`
 const EarlyYears = ({ data }) => {
   return (
     <Layout>
-      <div className="flex max-w-screen-xl mx-auto">
-        <div className="flex flex-col items-center w-full">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
+        }}
+      >
+        <div className="flex flex-col max-w-screen-xl mx-auto">
           {data.early.edges.map(({ node }) => {
             return (
-              <div key={node.id} className="flex flex-col items-center my-4">
-                <h6 className="text-2xl leading-none">{node.data.fullDate}</h6>
-                <h2 className="text-5xl leading-none">{node.data.artist}</h2>
-                <div className="flex w-full my-4">
-                  {node.data.img1 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img1[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img2 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img2[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img3 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img3[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img4 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img4[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img5 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img5[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img6 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img6[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
-                  {node.data.img7 && (
-                    <div className="w-full flex justify-center mx-2">
-                      <img
-                        src={node.data.img7[0].url}
-                        alt=""
-                        className="self-start"
-                      />
-                    </div>
-                  )}
+              <div
+                key={node.id}
+                className="flex w-full my-6 bg-white shadow-lg border border-gray-200 p-6 rounded-md"
+              >
+                <div className="flex w-1/2">
+                  {node.data.img1 && <img src={node.data.img1[0].url} alt="" />}
                 </div>
-                <hr className="mt-4 w-full border-t border-gray-400" />
+                <div className="flex w-1/2 flex-col justify-center items-center order-first">
+                  <p className="text-lg text-yellow border-b border-gray-500">
+                    {node.data.fullDate}
+                  </p>
+                  <h2 className="text-4xl geist text-gray-700 text-center">
+                    {node.data.artist}
+                  </h2>
+                </div>
               </div>
             )
           })}

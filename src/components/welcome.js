@@ -149,7 +149,7 @@ const Welcome = () => {
             It’s all here - the national acts, the local talent, the hits, the
             misses – the memories. Check It Out!
           </h2>
-          <p className="text-base solway text-center">
+          <p className="text-base solway text-center text-gray-600">
             <em>
               Special Thanks to Ann Duggan, Dennis Hertle, Tim Canfield, Dan
               Choiniere, Tate Preston, Kathy Wall
