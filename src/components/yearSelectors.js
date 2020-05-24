@@ -11,14 +11,15 @@ const YearSelectors = () => {
     >
       <div className="max-w-screen-xl m-auto py-24">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-6xl geist leading-none">Search By Year</h2>
+          <h2 className="text-6xl geist leading-none text-gray-800">
+            Search By Year
+          </h2>
           <p className="text-gray-600 max-w-lg mx-auto text-center">
             Browse through the history of Danceland with artists, dates, prices,
             images and most of all...memories.
           </p>
         </div>
-        <div className="grid grid-cols-5 gap-6">
-          <YearSelector year="1954" to="1954" />
+        <div className="grid-cols-2 md:grid-col-3 lg:grid grid-cols-7 gap-6">
           <YearSelector year="1955" to="1955" />
           <YearSelector year="1956" to="1956" />
           <YearSelector year="1957" to="1957" />

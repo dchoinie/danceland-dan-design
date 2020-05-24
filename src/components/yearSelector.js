@@ -27,7 +27,7 @@ export default class YearSelector extends Component {
     return (
       <Link
         to={this.props.to}
-        className="flex flex-col items-center justify-center transform hover:scale-110 transition duration-500 ease-in-out"
+        className="flex flex-col items-center justify-center transform hover:scale-150 transition duration-500 ease-in-out"
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover}
       >
@@ -36,7 +36,11 @@ export default class YearSelector extends Component {
           alt=""
           className={`${this.state.isHovered ? "rotate" : ""}`}
         />
-        <h2 className="absolute text-white text-6xl geist">
+        <h2
+          className={`absolute text-5xl geist ${
+            this.state.isHovered ? "text-white" : "text-gray-300"
+          }`}
+        >
           {this.props.year}
         </h2>
       </Link>

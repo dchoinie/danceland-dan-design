@@ -57,6 +57,7 @@ const Hero = () => {
               className="w-3/4 self-center"
             />
             <h1 className="text-5xl text-white geist">A Midwest Ballroom</h1>
+            <p className="text-yellow text-xl">1926 - 1968</p>
           </div>
         </div>
         <div className="flex w-1/2">

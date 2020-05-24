@@ -1,15 +1,15 @@
 import React from "react"
-import Header from "./Header"
+import HomeHeader from "./homeHeader"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const HomeLayout = ({ children }) => {
   return (
     <>
-      <Header />
+      <HomeHeader />
       {children}
       <Footer />
     </>
   )
 }
 
-export default Layout
+export default HomeLayout

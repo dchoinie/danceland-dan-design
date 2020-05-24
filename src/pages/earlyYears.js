@@ -51,18 +51,52 @@ const EarlyYears = ({ data }) => {
             return (
               <div
                 key={node.id}
-                className="flex w-full my-6 bg-white shadow-lg border border-gray-200 p-6 rounded-md"
+                className="flex w-full my-6 bg-white shadow-lg border border-gray-200 p-6 rounded-md border border-gray-300"
               >
-                <div className="flex justify-center w-1/2">
-                  {node.data.img1 && <img src={node.data.img1[0].url} alt="" />}
-                </div>
-                <div className="flex w-1/2 flex-col justify-center items-center order-first">
+                <div className="flex flex-col items-center w-full">
                   <p className="text-lg text-yellow border-b border-gray-500">
                     {node.data.fullDate}
                   </p>
-                  <h2 className="text-4xl geist text-gray-700 text-center">
+                  <h2 className="text-5xl geist text-gray-700 text-center">
                     {node.data.artist}
                   </h2>
+                  <div className="flex justify-center max-w-full flex-wrap">
+                    {node.data.img1 && (
+                      <img
+                        src={node.data.img1[0].url}
+                        className="max-w-xl"
+                        alt=""
+                      />
+                    )}
+                    {node.data.img2 && (
+                      <img
+                        src={node.data.img2[0].url}
+                        className="max-w-xl"
+                        alt=""
+                      />
+                    )}
+                    {node.data.img3 && (
+                      <img
+                        src={node.data.img3[0].url}
+                        className="max-w-xl"
+                        alt=""
+                      />
+                    )}
+                    {node.data.img4 && (
+                      <img
+                        src={node.data.img4[0].url}
+                        className="max-w-xl"
+                        alt=""
+                      />
+                    )}
+                    {node.data.img5 && (
+                      <img
+                        src={node.data.img5[0].url}
+                        className="max-w-xl"
+                        alt=""
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
             )

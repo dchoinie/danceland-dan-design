@@ -1,44 +1,17 @@
 import React, { useState } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import {
   FaSearch,
   FaAngleDown,
   FaAngleUp,
   FaRegCalendarAlt,
 } from "react-icons/fa"
-import Img from "gatsby-image"
-import Front from "../images/front.jpg"
 
-const Header = () => {
+const HomeHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const data = useStaticQuery(graphql`
-    {
-      logo: file(relativePath: { eq: "danceland_logo.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            srcSet
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
-    <header
-      className="relative z-40"
-      style={{
-        backgroundImage: `linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)) ,url(${Front})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="flex flex-col w-full z-40 relative py-4 max-w-screen-xl mx-auto">
-        <Link to="/" className="flex justify-center mb-4 text-yellow">
-          <p className="text-2xl geist self-center">1926</p>
-          <Img fluid={data.logo.childImageSharp.fluid} className="w-1/4" />
-          <p className="text-2xl geist self-center">1968</p>
-        </Link>
+    <header className="relative z-40" style={{ background: "rgba(0,0,0,0.2)" }}>
+      <div className="flex w-full z-40 relative py-4 max-w-screen-xl mx-auto">
         <ul className="flex justify-between w-full text-xl font-extrabold text-white">
           <li>
             <Link to="/">Home</Link>
@@ -157,4 +130,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HomeHeader
