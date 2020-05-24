@@ -113,13 +113,13 @@ const HomeHeader = () => {
             )}
           </li>
           <li>
-            <Link to="/">Posters</Link>
+            <Link to="/posters">Posters</Link>
           </li>
           <li>
             <Link to="/">Danceland Bandstand</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/">Bio</Link>
           </li>
           <li className="self-center">
             <FaSearch />
