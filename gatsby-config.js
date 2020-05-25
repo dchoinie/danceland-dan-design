@@ -28,7 +28,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Notable", "Solway"],
+          families: ["Solway"],
         },
       },
     },
@@ -47,6 +47,58 @@ module.exports = {
           {
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `data1955`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1956`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1957`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1958`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1959`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1960`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1961`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1962`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1963`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1964`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1965`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1966`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1967`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `data1968`,
           },
         ],
       },
