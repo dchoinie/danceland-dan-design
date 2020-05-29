@@ -44,10 +44,11 @@ const PostersHome = () => {
       }}
     >
       <div className="flex flex-col items-center max-w-screen-xl mx-auto">
-        <h2 className="text-6xl geist text-gray-800">
+        <h2 className="text-6xl geist text-gray-800 leading-none">
           The Artisty Of Andy Jennings
         </h2>
-        <p className="text-xl text-gray-700">
+        <div className="w-1/5 border-t-2 border-maroon my-2"></div>
+        <p className="text-gray-700">
           Browse some of the magnificent poster designs advertising the
           Danceland acts.
         </p>
@@ -67,7 +68,7 @@ const PostersHome = () => {
         </div>
         <Link
           to="/posters"
-          className="flex justify-center bg-light-orange hover:bg-orange-700 text-white px-4 py-2 rounded-md text-xl"
+          className="flex justify-center bg-maroon hover:bg-red-900 text-white px-4 py-2 rounded-md text-xl"
         >
           Browse All Posters <FaAngleRight className="self-center ml-2" />
         </Link>

@@ -34,7 +34,7 @@ const Header = () => {
       }}
     >
       <div className="flex flex-col w-full z-40 relative py-4 max-w-screen-xl mx-auto">
-        <Link to="/" className="flex justify-center mb-4 text-yellow">
+        <Link to="/" className="flex justify-center mb-4 text-main-yellow">
           <p className="text-2xl geist self-center">1926</p>
           <Img fluid={data.logo.childImageSharp.fluid} className="w-1/4" />
           <p className="text-2xl geist self-center">1968</p>

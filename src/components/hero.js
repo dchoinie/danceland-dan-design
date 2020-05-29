@@ -40,7 +40,7 @@ const Hero = () => {
       className="relative"
       style={{
         marginTop: "-61.6px",
-        filter: "sepia(30%)",
+        filter: "sepia(10%)",
       }}
     >
       <div className="flex h-screen">
@@ -57,7 +57,7 @@ const Hero = () => {
               className="w-3/4 self-center"
             />
             <h1 className="text-5xl text-white geist">A Midwest Ballroom</h1>
-            <p className="text-yellow text-xl">1926 - 1968</p>
+            <p className="text-main-yellow text-xl">1926 - 1968</p>
           </div>
         </div>
         <div className="flex w-1/2">
@@ -101,7 +101,7 @@ const Hero = () => {
             }}
           ></div>
           <div
-            className="w-full bg-yellow"
+            className="w-full bg-main-yellow"
             style={{
               clipPath: "polygon(50% 0, 100% 0, 50% 100%, 0% 100%)",
               marginRight: "-30%",

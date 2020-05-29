@@ -8,7 +8,7 @@ const Welcome = () => {
     {
       opening: file(relativePath: { eq: "homeImages/opening.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -17,7 +17,7 @@ const Welcome = () => {
       }
       cbasie: file(relativePath: { eq: "homeImages/countbasie.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -26,7 +26,7 @@ const Welcome = () => {
       }
       cberry: file(relativePath: { eq: "homeImages/cberry.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -35,7 +35,7 @@ const Welcome = () => {
       }
       everly: file(relativePath: { eq: "homeImages/everly.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -44,7 +44,7 @@ const Welcome = () => {
       }
       guesswho: file(relativePath: { eq: "homeImages/guesswho.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -53,7 +53,7 @@ const Welcome = () => {
       }
       cash: file(relativePath: { eq: "homeImages/cash.jpg" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 90, maxWidth: 500) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -171,12 +171,12 @@ const Welcome = () => {
                 Gibson, Johnny Horton, Faron Young, Jim Reeves, Conway Twitty,
                 Jimmy Dean and Roger Miller.
               </p>
-              <div className="flex border-t-2 border-yellow w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-main-yellow w-1/2 my-4"></div>
             </div>
           </div>
           <div className="flex w-1/2 m-12">
             <figure className="flex flex-col w-full">
-              <div className="bg-yellow rounded shadow-md">
+              <div className="bg-main-yellow rounded shadow-md">
                 <Img
                   fluid={data.cash.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"

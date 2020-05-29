@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import Record from "../images/spinner.png"
+import SpinnerImg from "../components/spinnerImg"
 
 export default class YearSelector extends Component {
   constructor() {
@@ -31,10 +31,8 @@ export default class YearSelector extends Component {
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover}
       >
-        <img
-          src={Record}
-          alt=""
-          className={`${this.state.isHovered ? "rotate" : ""}`}
+        <SpinnerImg
+          spinnerClass={`${this.state.isHovered ? "rotate" : ""} w-full`}
         />
         <h2
           className={`absolute text-5xl geist ${

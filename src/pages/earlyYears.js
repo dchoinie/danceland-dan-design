@@ -1,7 +1,21 @@
-import React from "react"
+import React, { Component } from "react"
+import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Texture from "../images/textures/vintage_speckles.png"
+import algoliasearch from "algoliasearch/lite"
+import {
+  InstantSearch,
+  SearchBox,
+  Hits,
+  Highlight,
+} from "react-instantsearch-dom"
+import "instantsearch.css/themes/algolia.css"
+
+const searchClient = algoliasearch(
+  "E4J1WYO56U",
+  "91e29ad000a7f0d3f8144b749935edfd"
+)
 
 export const earlyYearsQuery = graphql`
   {
@@ -38,72 +52,35 @@ export const earlyYearsQuery = graphql`
   }
 `
 
-const EarlyYears = ({ data }) => {
-  return (
-    <Layout>
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-        }}
-      >
-        <div className="flex flex-col max-w-screen-xl mx-auto">
-          {data.early.edges.map(({ node }) => {
-            return (
-              <div
-                key={node.id}
-                className="flex w-full my-6 bg-white shadow-lg border border-gray-200 p-6 rounded-md border border-gray-300"
-              >
-                <div className="flex flex-col items-center w-full">
-                  <p className="text-lg text-yellow border-b border-gray-500">
-                    {node.data.fullDate}
-                  </p>
-                  <h2 className="text-5xl geist text-gray-700 text-center">
-                    {node.data.artist}
-                  </h2>
-                  <div className="flex justify-center max-w-full flex-wrap">
-                    {node.data.img1 && (
-                      <img
-                        src={node.data.img1[0].url}
-                        className="max-w-xl"
-                        alt=""
-                      />
-                    )}
-                    {node.data.img2 && (
-                      <img
-                        src={node.data.img2[0].url}
-                        className="max-w-xl"
-                        alt=""
-                      />
-                    )}
-                    {node.data.img3 && (
-                      <img
-                        src={node.data.img3[0].url}
-                        className="max-w-xl"
-                        alt=""
-                      />
-                    )}
-                    {node.data.img4 && (
-                      <img
-                        src={node.data.img4[0].url}
-                        className="max-w-xl"
-                        alt=""
-                      />
-                    )}
-                    {node.data.img5 && (
-                      <img
-                        src={node.data.img5[0].url}
-                        className="max-w-xl"
-                        alt=""
-                      />
-                    )}
-                  </div>
-                </div>
-              </div>
-            )
-          })}
+class EarlyYears extends Component {
+  render() {
+    const { data } = this.props
+    return (
+      <Layout>
+        <div className="my-24">
+          <InstantSearch indexName="EarlyYears" searchClient={searchClient}>
+            <div className="max-w-screen-xl mx-auto">
+              <SearchBox />
+              <Hits hitComponent={Hit} />
+            </div>
+          </InstantSearch>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    )
+  }
+}
+
+const Hit = props => {
+  return (
+    <div className="flex flex-col justify-between h-full items-center">
+      <h2 className="text-3xl geist text-center">{props.hit.data.artist}</h2>
+      <p>{props.hit.data.fullDate}</p>
+      {props.hit.data.img1 && (
+        <div>
+          <img src={props.hit.data.img1[0].url} alt="" />
+        </div>
+      )}
+    </div>
   )
 }
 

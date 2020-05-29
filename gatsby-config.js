@@ -2,6 +2,30 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const EarlyYearsQuery = `
+{
+  earlyYears: allAirtable(filter: {table: {eq: "earlyYears"}}, sort: {fields: data___orderId}) {
+    nodes {
+      id
+      data {
+        artist
+        fullDate
+        img1 {
+          url
+        }
+      }
+    }
+  }
+}
+`
+
+const queries = [
+  {
+    query: EarlyYearsQuery,
+    transformer: ({ data }) => data.earlyYears.nodes,
+  },
+]
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -25,16 +49,17 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ["Solway"],
-        },
+        fonts: [
+          {
+            family: `Solway`,
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
     {
       resolve: `gatsby-source-airtable`,
       options: {
@@ -116,6 +141,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 1000, // default: 1000
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

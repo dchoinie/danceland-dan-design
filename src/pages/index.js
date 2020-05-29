@@ -5,6 +5,8 @@ import Hero from "../components/hero"
 import Welcome from "../components/welcome"
 import YearSelectors from "../components/yearSelectors"
 import PostersHome from "../components/postersHome"
+import Bandstand from "../components/bandstand"
+import About from "../components/about"
 
 const IndexPage = () => (
   <HomeLayout>
@@ -13,6 +15,8 @@ const IndexPage = () => (
     <Welcome />
     <YearSelectors />
     <PostersHome />
+    <Bandstand />
+    <About />
   </HomeLayout>
 )
 

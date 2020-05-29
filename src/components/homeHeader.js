@@ -121,7 +121,7 @@ const HomeHeader = () => {
           <li>
             <Link to="/">Bio</Link>
           </li>
-          <li className="self-center">
+          <li className="self-center text-black">
             <FaSearch />
           </li>
         </ul>
