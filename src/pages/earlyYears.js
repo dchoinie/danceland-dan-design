@@ -10,7 +10,6 @@ import {
   Hits,
   Highlight,
 } from "react-instantsearch-dom"
-import "instantsearch.css/themes/algolia.css"
 
 const searchClient = algoliasearch(
   "E4J1WYO56U",
