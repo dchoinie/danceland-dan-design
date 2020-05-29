@@ -1,11 +1,5 @@
 module.exports = {
-  purge: [
-    "./src/pages/404.js",
-    "./src/pages/1955.js",
-    "./src/pages/earlyYears.js",
-    "./src/pages/index.js",
-    "./src/pages/poster.js",
-  ],
+  purge: [],
   theme: {
     extend: {
       colors: {
