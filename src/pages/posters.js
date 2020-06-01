@@ -7,20 +7,28 @@ import Texture from "../images/textures/vintage_speckles.png"
 const Posters = () => {
   const data = useStaticQuery(graphql`
     {
-      posters: allFile(
-        filter: { relativeDirectory: { eq: "posters" } }
-        sort: { fields: absolutePath }
+      posters: allAirtable(
+        filter: { table: { eq: "posters" } }
+        sort: { fields: data___orderId }
       ) {
         edges {
           node {
-            childImageSharp {
-              fluid(quality: 90) {
-                src
-                srcSet
-                ...GatsbyImageSharpFluid
-              }
-            }
             id
+            data {
+              orderId
+              poster {
+                localFiles {
+                  childImageSharp {
+                    fluid {
+                      src
+                      srcSet
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              date(formatString: "yyyy")
+            }
           }
         }
       }
@@ -58,10 +66,28 @@ const Posters = () => {
             {data.posters.edges.map(({ node }) => {
               return (
                 <div key={node.id} className="w-full">
-                  <Img
-                    fluid={node.childImageSharp.fluid}
-                    className="w-full h-full shadow-md"
-                  />
+                  {node.data.orderId <= 45 ? (
+                    <div className="flex flex-col w-full h-full items-center">
+                      <p className="text-5xl geist">{node.data.date}</p>
+                      <Img
+                        fluid={
+                          node.data.poster.localFiles[0].childImageSharp.fluid
+                        }
+                        className="w-full h-full shadow-md"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex flex-col w-full h-full items-center">
+                      <h2 className="text-lg">(Not Andy Jennings Poster)</h2>
+                      <p className="text-5xl geist">{node.data.date}</p>
+                      <Img
+                        fluid={
+                          node.data.poster.localFiles[0].childImageSharp.fluid
+                        }
+                        className="w-full h-full shadow-md"
+                      />
+                    </div>
+                  )}
                 </div>
               )
             })}

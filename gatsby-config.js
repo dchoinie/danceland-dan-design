@@ -67,6 +67,11 @@ module.exports = {
         tables: [
           {
             baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `posters`,
+            mapping: { poster: `fileNode` },
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `earlyYears`,
           },
           {
