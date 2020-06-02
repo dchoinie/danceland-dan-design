@@ -32,6 +32,15 @@ const Posters = () => {
           }
         }
       }
+      paint: file(relativePath: { eq: "paint.png" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -44,10 +53,14 @@ const Posters = () => {
         <div className="max-w-screen-xl mx-auto py-24">
           <div className="flex flex-col">
             <div className="flex mb-12">
-              <div className="flex w-1/2">
+              <div className="flex flex-col items-center w-1/2">
                 <h2 className="text-5xl geist self-center">
                   The Artisty Of Andy Jennings
                 </h2>
+                <Img
+                  fluid={data.paint.childImageSharp.fluid}
+                  className="w-1/2"
+                />
               </div>
               <div className="flex w-1/2">
                 <p className="text-xl text-gray-700">

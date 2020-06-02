@@ -8,6 +8,13 @@ a {
 }
 
 @tailwind components;
+
+.ais-SearchBox {
+}
+
+.ais-SearchBox-input {
+}
+
 @tailwind utilities;
 
 .geist {

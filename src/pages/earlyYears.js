@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Texture from "../images/textures/vintage_speckles.png"
 import algoliasearch from "algoliasearch/lite"
 import {
@@ -22,27 +23,21 @@ export const earlyYearsQuery = graphql`
       filter: { table: { eq: "earlyYears" } }
       sort: { fields: data___orderId }
     ) {
-      edges {
-        node {
-          id
-          data {
-            artist
-            fullDate
-            orderId
-            img1 {
-              url
-            }
-            img2 {
-              url
-            }
-            img3 {
-              url
-            }
-            img4 {
-              url
-            }
-            img5 {
-              url
+      nodes {
+        id
+        data {
+          artist
+          date(formatString: "yyyy")
+          orderId
+          img1 {
+            localFiles {
+              childImageSharp {
+                fluid {
+                  src
+                  srcSet
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
@@ -56,7 +51,11 @@ class EarlyYears extends Component {
     const { data } = this.props
     return (
       <Layout>
-        <div className="my-24">
+        <div
+          className="max-w-screen-xl mx-auto my-24"
+          style={{ border: "1px solid red" }}
+        >
+          <h2 className="text-3xl">Search the Early Years</h2>
           <InstantSearch indexName="EarlyYears" searchClient={searchClient}>
             <div className="max-w-screen-xl mx-auto">
               <SearchBox />
@@ -74,11 +73,15 @@ const Hit = props => {
     <div className="flex flex-col justify-between h-full items-center">
       <h2 className="text-3xl geist text-center">{props.hit.data.artist}</h2>
       <p>{props.hit.data.fullDate}</p>
-      {props.hit.data.img1 && (
-        <div>
-          <img src={props.hit.data.img1[0].url} alt="" />
+      {console.log(props.hit.data)}
+      {/* {props.hit.data.img1 && (
+        <div className="w-full">
+          <Img
+            fluid={props.hit.data.img1.localFiles[0].childImageSharp.fluid}
+            className="w-full"
+          />
         </div>
-      )}
+      )} */}
     </div>
   )
 }
