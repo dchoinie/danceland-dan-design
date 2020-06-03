@@ -60,6 +60,24 @@ const Welcome = () => {
           }
         }
       }
+      rockCollage: file(relativePath: { eq: "collages/Collage4.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 500) {
+            srcSet
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      countryCollage: file(relativePath: { eq: "collages/Collage5.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 500) {
+            srcSet
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -71,8 +89,8 @@ const Welcome = () => {
     >
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex mb-12">
-          <div className="flex w-1/2 m-12">
-            <figure className="flex flex-col w-full">
+          <div className="flex w-1/2 mr-4">
+            <figure className="flex flex-col w-full text-xs">
               <div className="bg-maroon rounded shadow-md">
                 <Img
                   fluid={data.opening.childImageSharp.fluid}
@@ -112,8 +130,8 @@ const Welcome = () => {
               <div className="flex border-t-2 border-dark-orange w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 m-12">
-            <figure className="flex flex-col w-full">
+          <div className="flex w-1/2 ml-4">
+            <figure className="flex flex-col w-full text-xs">
               <div className="bg-dark-orange rounded shadow-md">
                 <Img
                   fluid={data.cbasie.childImageSharp.fluid}
@@ -128,17 +146,19 @@ const Welcome = () => {
           </div>
         </div>
         <div className="flex mb-12">
-          <div className="flex w-1/2 m-12">
-            <figure className="flex flex-col w-full">
+          <div className="flex w-1/2 self-center mr-4">
+            <figure className="flex w-full flex-col text-xs">
               <div className="bg-light-orange rounded shadow-md">
                 <Img
-                  fluid={data.guesswho.childImageSharp.fluid}
+                  fluid={data.rockCollage.childImageSharp.fluid}
                   className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
                 />
               </div>
-              <figcaption className="flex flex-col items-center text-gray-600">
-                <p>The Guess Who</p>
-                <p>August 7th, 1965</p>
+              <figcaption className="flex flex-col w-2/3 mx-auto text-center items-center text-gray-600">
+                <p>
+                  The Animals, Four Seasons, Everly Brothers, Jerry Lee Lewis,
+                  Roy Orbison, Beach Boys
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -174,17 +194,19 @@ const Welcome = () => {
               <div className="flex border-t-2 border-main-yellow w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 m-12">
-            <figure className="flex flex-col w-full">
+          <div className="flex w-1/2 ml-4">
+            <figure className="flex flex-col w-full text-xs">
               <div className="bg-main-yellow rounded shadow-md">
                 <Img
-                  fluid={data.cash.childImageSharp.fluid}
+                  fluid={data.countryCollage.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
                 />
               </div>
-              <figcaption className="flex flex-col items-center text-gray-600">
-                <p>Johnny Cash</p>
-                <p>March 24th, 1962</p>
+              <figcaption className="flex flex-col w-2/3 mx-auto text-center items-center text-gray-600">
+                <p>
+                  Marty Robbins, Jimmy Dean, Johnny Cash, Jim Reeves, Buck
+                  Owens, Kitty Wells
+                </p>
               </figcaption>
             </figure>
           </div>
