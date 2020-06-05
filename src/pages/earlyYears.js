@@ -2,15 +2,16 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import Texture from "../images/textures/vintage_speckles.png"
 import algoliasearch from "algoliasearch/lite"
 import {
   InstantSearch,
   SearchBox,
   Hits,
   Highlight,
+  Configure,
 } from "react-instantsearch-dom"
+import "instantsearch.css/themes/reset.css"
+import Texture from "../images/textures/vintage_speckles.png"
 
 const searchClient = algoliasearch(
   "E4J1WYO56U",
@@ -27,18 +28,10 @@ export const earlyYearsQuery = graphql`
         id
         data {
           artist
-          date(formatString: "yyyy")
+          fullDate
           orderId
           img1 {
-            localFiles {
-              childImageSharp {
-                fluid {
-                  src
-                  srcSet
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            url
           }
         }
       }
@@ -52,16 +45,22 @@ class EarlyYears extends Component {
     return (
       <Layout>
         <div
-          className="max-w-screen-xl mx-auto my-24"
-          style={{ border: "1px solid red" }}
+          style={{
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
+          }}
         >
-          <h2 className="text-3xl">Search the Early Years</h2>
-          <InstantSearch indexName="EarlyYears" searchClient={searchClient}>
-            <div className="max-w-screen-xl mx-auto">
-              <SearchBox />
+          <div className="ais-InstantSearch max-w-screen-xl mx-auto py-24">
+            <InstantSearch
+              indexName="sortByOrderId"
+              searchClient={searchClient}
+            >
+              <div className="flex justify-center mb-12">
+                <SearchBox />
+              </div>
+              <Configure hitsPerPage={227} />
               <Hits hitComponent={Hit} />
-            </div>
-          </InstantSearch>
+            </InstantSearch>
+          </div>
         </div>
       </Layout>
     )
@@ -70,18 +69,18 @@ class EarlyYears extends Component {
 
 const Hit = props => {
   return (
-    <div className="flex flex-col justify-between h-full items-center">
-      <h2 className="text-3xl geist text-center">{props.hit.data.artist}</h2>
-      <p>{props.hit.data.fullDate}</p>
-      {console.log(props.hit.data)}
-      {/* {props.hit.data.img1 && (
-        <div className="w-full">
-          <Img
-            fluid={props.hit.data.img1.localFiles[0].childImageSharp.fluid}
-            className="w-full"
-          />
+    <div className="flex flex-col justify-between h-full items-center shadow-md rounded-md my-2 border border-gray-300 mx-auto p-6 bg-white">
+      <p className="text-xl text-main-yellow underline">
+        {props.hit.data.fullDate}
+      </p>
+      <h2 className="text-5xl geist text-gray-700 flex text-center">
+        {props.hit.data.artist}
+      </h2>
+      {props.hit.data.img1 && (
+        <div className="flex justify-center w-full">
+          <img src={props.hit.data.img1[0].url} alt="" />
         </div>
-      )} */}
+      )}
     </div>
   )
 }

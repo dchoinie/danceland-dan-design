@@ -10,9 +10,24 @@ a {
 @tailwind components;
 
 .ais-SearchBox {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #4a5568;
+  color: #4a5568;
+  font-family: "Geist";
+  background: transparent;
+  border-radius: 0.5rem;
 }
 
 .ais-SearchBox-input {
+  padding: 0.25rem;
+}
+
+.ais-SearchBox-input:focus {
+  outline: none;
+}
+
+.ais-SearchBox-submitIcon {
+  display: none;
 }
 
 @tailwind utilities;

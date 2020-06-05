@@ -27,15 +27,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -66,15 +58,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -105,15 +89,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -144,15 +120,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -183,15 +151,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -222,15 +182,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -261,15 +213,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -300,15 +244,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -342,15 +278,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -381,15 +309,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -420,15 +340,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -459,15 +371,7 @@ export const query1955 = graphql`
             artist
             fullDate
             img1 {
-              localFiles {
-                childImageSharp {
-                  fluid {
-                    src
-                    srcSet
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              url
             }
             img2 {
               url
@@ -573,11 +477,11 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
+                {node.data.img1 && (
                   <div className="flex justify-center flex-wrap w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
               </div>
             )
           })}

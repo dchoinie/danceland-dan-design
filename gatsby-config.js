@@ -9,17 +9,10 @@ const EarlyYearsQuery = `
       id
       data {
         artist
-        date(formatString: "yyyy")
+        fullDate
         orderId
         img1 {
-          localFiles {
-            childImageSharp {
-              fluid {
-                src
-                srcSet
-              }
-            }
-          }
+          url
         }
       }
     }
@@ -81,7 +74,6 @@ module.exports = {
           {
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `earlyYears`,
-            mapping: { img1: `fileNode` },
           },
           {
             baseId: process.env.AIRTABLE_BASE_ID,
