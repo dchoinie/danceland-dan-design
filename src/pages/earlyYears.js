@@ -78,7 +78,7 @@ const Hit = props => {
       </h2>
       {props.hit.data.img1 && (
         <div className="flex justify-center w-full">
-          <img src={props.hit.data.img1[0].url} alt="" />
+          <img src={props.hit.data.img1[0].url} alt="" className="w-2/3" />
         </div>
       )}
     </div>
