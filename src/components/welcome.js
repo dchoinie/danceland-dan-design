@@ -89,7 +89,7 @@ const Welcome = () => {
     >
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex mb-12">
-          <div className="flex w-1/2 mr-4">
+          <div className="flex w-1/2 mr-4 p-12">
             <figure className="flex flex-col w-full text-xs">
               <div className="bg-maroon rounded shadow-md">
                 <Img
@@ -130,7 +130,7 @@ const Welcome = () => {
               <div className="flex border-t-2 border-dark-orange w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 ml-4">
+          <div className="flex w-1/2 ml-4 p-12">
             <figure className="flex flex-col w-full text-xs">
               <div className="bg-dark-orange rounded shadow-md">
                 <Img
@@ -146,7 +146,7 @@ const Welcome = () => {
           </div>
         </div>
         <div className="flex mb-12">
-          <div className="flex w-1/2 self-center mr-4">
+          <div className="flex w-1/2 self-center mr-4 p-12">
             <figure className="flex w-full flex-col text-xs">
               <div className="bg-light-orange rounded shadow-md">
                 <Img
@@ -194,7 +194,7 @@ const Welcome = () => {
               <div className="flex border-t-2 border-main-yellow w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 ml-4">
+          <div className="flex w-1/2 ml-4 p-12">
             <figure className="flex flex-col w-full text-xs">
               <div className="bg-main-yellow rounded shadow-md">
                 <Img

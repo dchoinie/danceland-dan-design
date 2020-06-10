@@ -17,6 +17,9 @@ const HomeHeader = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/">Bio</Link>
+          </li>
+          <li>
             <Link to="/earlyYears">Early Years</Link>
           </li>
           <li>
@@ -117,9 +120,6 @@ const HomeHeader = () => {
           </li>
           <li>
             <Link to="/">Danceland Bandstand</Link>
-          </li>
-          <li>
-            <Link to="/">Bio</Link>
           </li>
           <li className="self-center text-black">
             <FaSearch />

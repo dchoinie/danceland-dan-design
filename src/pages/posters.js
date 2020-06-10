@@ -7,8 +7,8 @@ import Texture from "../images/textures/vintage_speckles.png"
 const Posters = () => {
   const data = useStaticQuery(graphql`
     {
-      posters: allAirtable(
-        filter: { table: { eq: "posters" } }
+      andy: allAirtable(
+        filter: { table: { eq: "posters" }, data: { orderId: { lte: 46 } } }
         sort: { fields: data___orderId }
       ) {
         edges {
@@ -28,6 +28,31 @@ const Posters = () => {
                 }
               }
               date(formatString: "yyyy")
+            }
+          }
+        }
+      }
+      nonAndy: allAirtable(
+        filter: { table: { eq: "posters" }, data: { orderId: { gt: 46 } } }
+        sort: { fields: data___orderId }
+      ) {
+        edges {
+          node {
+            id
+            data {
+              orderId
+              poster {
+                localFiles {
+                  childImageSharp {
+                    fluid {
+                      src
+                      srcSet
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              date(formatString: "MMMM yyyy")
             }
           }
         }
@@ -62,45 +87,55 @@ const Posters = () => {
                   className="w-1/2"
                 />
               </div>
-              <div className="flex w-1/2">
-                <p className="text-xl text-gray-700">
+              <div className="flex flex-col w-1/2">
+                <p className="text-xl text-gray-700 mb-2">
                   At the entrance to the ballroom Danceland patrons were greeted
                   by a poster that would announce upcoming or current shows.
-                  Poster is probably an under-statement. These were large 28” X
-                  44” hand-painted one-of-a kind mini-masterpieces created by
-                  talented local artist Andy Jennings. The posters were on hard
-                  cardboard and rested on an easel right across from the box
-                  office. Very few of these exist today.
+                  Poster is probably an under-statement.{" "}
+                </p>
+                <p className="text-xl text-gray-700">
+                  These were large 28” X 44” hand-painted one-of-a kind
+                  masterpieces created by talented local artist Andy Jennings.
+                  The posters were on hard cardboard and rested on an easel
+                  right across from the box office. Very few of these exist
+                  today.
                 </p>
               </div>
             </div>
           </div>
           <div className="w-full grid grid-cols-3 gap-12">
-            {data.posters.edges.map(({ node }) => {
+            {data.andy.edges.map(({ node }) => {
               return (
                 <div key={node.id} className="w-full">
-                  {node.data.orderId <= 45 ? (
-                    <div className="flex flex-col w-full h-full items-center">
-                      <p className="text-5xl geist">{node.data.date}</p>
-                      <Img
-                        fluid={
-                          node.data.poster.localFiles[0].childImageSharp.fluid
-                        }
-                        className="w-full h-full shadow-md"
-                      />
-                    </div>
-                  ) : (
-                    <div className="flex flex-col w-full h-full items-center">
-                      <h2 className="text-lg">(Not Andy Jennings Poster)</h2>
-                      <p className="text-5xl geist">{node.data.date}</p>
-                      <Img
-                        fluid={
-                          node.data.poster.localFiles[0].childImageSharp.fluid
-                        }
-                        className="w-full h-full shadow-md"
-                      />
-                    </div>
-                  )}
+                  <div className="flex flex-col w-full h-full items-center">
+                    <p className="text-5xl geist">{node.data.date}</p>
+                    <Img
+                      fluid={
+                        node.data.poster.localFiles[0].childImageSharp.fluid
+                      }
+                      className="w-full h-full shadow-md"
+                    />
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+          <h2 className="text-6xl geist text-center my-6">
+            Non-Andy Jennings Posters
+          </h2>
+          <div className="w-full grid grid-cols-3 gap-12">
+            {data.nonAndy.edges.map(({ node }) => {
+              return (
+                <div key={node.id} className="w-full">
+                  <div className="flex flex-col w-full h-full items-center">
+                    <p className="text-5xl geist">{node.data.date}</p>
+                    <Img
+                      fluid={
+                        node.data.poster.localFiles[0].childImageSharp.fluid
+                      }
+                      className="w-full h-full shadow-md"
+                    />
+                  </div>
                 </div>
               )
             })}

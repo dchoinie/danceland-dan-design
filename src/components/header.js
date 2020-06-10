@@ -44,6 +44,9 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/">Bio</Link>
+          </li>
+          <li>
             <Link to="/earlyYears">Early Years</Link>
           </li>
           <li>
@@ -144,9 +147,6 @@ const Header = () => {
           </li>
           <li>
             <Link to="/">Danceland Bandstand</Link>
-          </li>
-          <li>
-            <Link to="/">Bio</Link>
           </li>
           <li className="self-center">
             <FaSearch />

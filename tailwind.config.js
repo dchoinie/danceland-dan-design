@@ -7,6 +7,7 @@ module.exports = {
         "dark-orange": "#e14e2c",
         "light-orange": "#eb7d32",
         "main-yellow": "#efc243",
+        tan: "#e7e3d2",
       },
     },
   },

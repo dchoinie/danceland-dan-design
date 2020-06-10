@@ -9,6 +9,7 @@ import {
   Hits,
   Highlight,
   Configure,
+  RefinementList,
 } from "react-instantsearch-dom"
 import "instantsearch.css/themes/reset.css"
 import Texture from "../images/textures/vintage_speckles.png"
@@ -33,6 +34,9 @@ export const earlyYearsQuery = graphql`
           img1 {
             url
           }
+          img2 {
+            url
+          }
         }
       }
     }
@@ -45,11 +49,11 @@ class EarlyYears extends Component {
     return (
       <Layout>
         <div
-          style={{
-            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-          }}
+        // style={{
+        //   backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(${Texture})`,
+        // }}
         >
-          <div className="ais-InstantSearch max-w-screen-xl mx-auto py-24">
+          <div className="max-w-screen-xl mx-auto py-24">
             <InstantSearch
               indexName="sortByOrderId"
               searchClient={searchClient}
@@ -69,19 +73,31 @@ class EarlyYears extends Component {
 
 const Hit = props => {
   return (
-    <div className="flex flex-col justify-between h-full items-center shadow-md rounded-md my-2 border border-gray-300 mx-auto p-6 bg-white">
-      <p className="text-xl text-main-yellow underline">
-        {props.hit.data.fullDate}
-      </p>
-      <h2 className="text-5xl geist text-gray-700 flex text-center">
-        {props.hit.data.artist}
-      </h2>
-      {props.hit.data.img1 && (
-        <div className="flex justify-center w-full">
-          <img src={props.hit.data.img1[0].url} alt="" className="w-2/3" />
-        </div>
-      )}
-    </div>
+    <>
+      <div className="flex flex-col justify-between h-full items-center rounded-md my-2 mx-auto p-6">
+        <p className="text-xl text-gray-700 underline">
+          {props.hit.data.fullDate}
+        </p>
+        <h2 className="text-5xl geist text-gray-800 flex text-center">
+          {props.hit.data.artist}
+        </h2>
+        {props.hit.data.img1 && (
+          <div className="flex justify-center w-full">
+            <img
+              src={props.hit.data.img1[0].url}
+              alt=""
+              className="w-2/3 shadow-md"
+            />
+          </div>
+        )}
+        {props.hit.data.img2 && (
+          <div className="flex justify-center w-full">
+            <img src={props.hit.data.img2[0].url} alt="" className="w-2/3" />
+          </div>
+        )}
+      </div>
+      <div className="border border-gray-300"></div>
+    </>
   )
 }
 
