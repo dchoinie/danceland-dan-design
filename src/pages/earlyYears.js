@@ -61,7 +61,7 @@ class EarlyYears extends Component {
               <div className="flex justify-center mb-12">
                 <SearchBox />
               </div>
-              <Configure hitsPerPage={227} />
+              <Configure hitsPerPage={326} />
               <Hits hitComponent={Hit} />
             </InstantSearch>
           </div>
