@@ -52,7 +52,7 @@ class EarlyYears extends Component {
               </h2>
               <SearchBox />
             </div>
-            <Configure hitsPerPage={326} />
+            <Configure hitsPerPage={616} />
             <div className="max-w-screen-xl mx-auto mt-12">
               <Hits hitComponent={Hit} />
             </div>
@@ -65,7 +65,7 @@ class EarlyYears extends Component {
 
 const Hit = props => {
   return (
-    <>
+    <div className="my-6">
       <div className="flex flex-col justify-between h-full items-center rounded-md my-2 mx-auto p-6">
         <p className="text-xl text-gray-700 underline">
           {props.hit.data.fullDate}
@@ -89,7 +89,7 @@ const Hit = props => {
         )}
       </div>
       <hr className="style-eight" />
-    </>
+    </div>
   )
 }
 
