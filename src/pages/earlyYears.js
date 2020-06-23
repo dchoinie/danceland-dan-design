@@ -11,8 +11,8 @@ import {
 import "instantsearch.css/themes/reset.css"
 
 const searchClient = algoliasearch(
-  process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_SEARCH_KEY
+  `E4J1WYO56U`,
+  `91e29ad000a7f0d3f8144b749935edfd`
 )
 
 export const earlyYearsQuery = graphql`

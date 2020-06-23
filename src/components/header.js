@@ -148,9 +148,6 @@ const Header = () => {
           <li>
             <Link to="/">Danceland Bandstand</Link>
           </li>
-          <li className="self-center">
-            <FaSearch />
-          </li>
         </ul>
       </div>
     </header>

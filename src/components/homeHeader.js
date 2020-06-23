@@ -121,9 +121,6 @@ const HomeHeader = () => {
           <li>
             <Link to="/">Danceland Bandstand</Link>
           </li>
-          <li className="self-center text-black text-white">
-            <FaSearch />
-          </li>
         </ul>
       </div>
     </header>
