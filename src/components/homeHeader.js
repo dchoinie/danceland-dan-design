@@ -10,8 +10,8 @@ import {
 const HomeHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className="relative z-40" style={{ background: "rgba(0,0,0,0.2)" }}>
-      <div className="flex w-full z-40 relative py-4 max-w-screen-xl mx-auto">
+    <header className="relative py-4 bg-transparent z-40">
+      <div className="flex w-full relative max-w-screen-xl mx-auto py-2">
         <ul className="flex justify-between w-full text-xl font-extrabold text-white">
           <li>
             <Link to="/">Home</Link>
@@ -121,7 +121,7 @@ const HomeHeader = () => {
           <li>
             <Link to="/">Danceland Bandstand</Link>
           </li>
-          <li className="self-center text-black">
+          <li className="self-center text-black text-white">
             <FaSearch />
           </li>
         </ul>

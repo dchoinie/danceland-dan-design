@@ -14,9 +14,9 @@ const IndexPage = () => (
     <Hero />
     <Welcome />
     <YearSelectors />
+    <About />
     <PostersHome />
     <Bandstand />
-    <About />
   </HomeLayout>
 )
 

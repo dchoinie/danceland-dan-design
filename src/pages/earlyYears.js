@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import algoliasearch from "algoliasearch/lite"
@@ -7,16 +6,13 @@ import {
   InstantSearch,
   SearchBox,
   Hits,
-  Highlight,
   Configure,
-  RefinementList,
 } from "react-instantsearch-dom"
 import "instantsearch.css/themes/reset.css"
-import Texture from "../images/textures/vintage_speckles.png"
 
 const searchClient = algoliasearch(
-  "E4J1WYO56U",
-  "91e29ad000a7f0d3f8144b749935edfd"
+  process.env.ALGOLIA_APP_ID,
+  process.env.ALGOLIA_SEARCH_KEY
 )
 
 export const earlyYearsQuery = graphql`
@@ -45,26 +41,22 @@ export const earlyYearsQuery = graphql`
 
 class EarlyYears extends Component {
   render() {
-    const { data } = this.props
     return (
       <Layout>
-        <div
-        // style={{
-        //   backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(${Texture})`,
-        // }}
-        >
-          <div className="max-w-screen-xl mx-auto py-24">
-            <InstantSearch
-              indexName="sortByOrderId"
-              searchClient={searchClient}
-            >
-              <div className="flex justify-center mb-12">
-                <SearchBox />
-              </div>
-              <Configure hitsPerPage={326} />
+        <div>
+          <InstantSearch indexName="sortByOrderId" searchClient={searchClient}>
+            <div className="flex flex-col items-center py-12 bg-gray-400">
+              <h2 className="text-4xl max-w-2xl text-center pb-6 geist">
+                Explore Danceland acts between the years <br />
+                1926 - 1954. Search by artist name or date.
+              </h2>
+              <SearchBox />
+            </div>
+            <Configure hitsPerPage={326} />
+            <div className="max-w-screen-xl mx-auto mt-12">
               <Hits hitComponent={Hit} />
-            </InstantSearch>
-          </div>
+            </div>
+          </InstantSearch>
         </div>
       </Layout>
     )
@@ -96,7 +88,7 @@ const Hit = props => {
           </div>
         )}
       </div>
-      <div className="border border-gray-300"></div>
+      <hr className="style-eight" />
     </>
   )
 }

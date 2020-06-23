@@ -1,20 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Front from "../images/front.jpg"
+import BackgroundImage from "gatsby-background-image"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
     {
-      vinyl: file(relativePath: { eq: "vinyl.png" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       front: file(relativePath: { eq: "front.jpg" }) {
         childImageSharp {
           fluid {
@@ -35,83 +26,29 @@ const Hero = () => {
       }
     }
   `)
+
+  const backgroundStack = [
+    `linear-gradient(to top right, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0))`,
+    data.front.childImageSharp.fluid,
+  ]
+
   return (
-    <div
-      className="relative"
-      style={{
-        marginTop: "-61.6px",
-        filter: "sepia(10%)",
-      }}
-    >
-      <div className="flex h-screen">
+    <BackgroundImage fluid={backgroundStack}>
+      <div className="h-screen" style={{ marginTop: "-78px" }}>
         <div
-          className="flex w-full relative"
-          style={{
-            backgroundImage: `linear-gradient(to top right, rgba(26, 26, 26, 1) 30%, rgba(26, 26, 26, 0.7)), url(${Front})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
+          className="flex flex-col justify-center max-w-screen-xl mx-auto h-full"
+          style={{ border: "1px solid red" }}
         >
-          <div className="absolute flex flex-col w-full h-full justify-center z-40 text-center">
-            <h1 className="text-5xl text-white geist">The History Of</h1>
-            <Img
-              fluid={data.logo.childImageSharp.fluid}
-              className="w-1/2 self-center"
-            />
-            <h1 className="text-5xl text-white geist">A Midwest Ballroom</h1>
-            <p className="text-main-yellow text-xl">1926 - 1968</p>
-          </div>
-        </div>
-        {/* <div className="flex w-1/3">
+          <h1 className="text-white">The History Of</h1>
           <Img
-            fluid={data.vinyl.childImageSharp.fluid}
-            className="w-full"
-            style={{ marginLeft: "-25%", zIndex: "-1" }}
+            fluid={data.logo.childImageSharp.fluid}
+            className="w-1/2 -ml-20 my-6"
+            style={{ transform: "rotate(-5deg)" }}
           />
-        </div> */}
-      </div>
-      {/* <div
-        className="absolute"
-        style={{
-          height: "100%",
-          width: "20%",
-          top: "0",
-          left: "75%",
-          transform: "translate(-50%)",
-        }}
-      >
-        <div className="flex justify-center w-full h-full">
-          <div
-            className="w-full bg-maroon"
-            style={{
-              clipPath: "polygon(50% 0, 100% 0, 50% 100%, 0% 100%)",
-              marginRight: "-30%",
-            }}
-          ></div>
-          <div
-            className="w-full bg-dark-orange"
-            style={{
-              clipPath: "polygon(50% 0, 100% 0, 50% 100%, 0% 100%)",
-              marginRight: "-30%",
-            }}
-          ></div>
-          <div
-            className="w-full bg-light-orange"
-            style={{
-              clipPath: "polygon(50% 0, 100% 0, 50% 100%, 0% 100%)",
-              marginRight: "-30%",
-            }}
-          ></div>
-          <div
-            className="w-full bg-main-yellow"
-            style={{
-              clipPath: "polygon(50% 0, 100% 0, 50% 100%, 0% 100%)",
-              marginRight: "-30%",
-            }}
-          ></div>
+          <h1 className="text-white">A Midwest Ballroom</h1>
         </div>
-      </div> */}
-    </div>
+      </div>
+    </BackgroundImage>
   )
 }
 

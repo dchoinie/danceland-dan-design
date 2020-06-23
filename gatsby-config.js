@@ -27,6 +27,7 @@ const queries = [
   {
     query: EarlyYearsQuery,
     transformer: ({ data }) => data.earlyYears.nodes,
+    indexName: "EarlyYears",
   },
 ]
 

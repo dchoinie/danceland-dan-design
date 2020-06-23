@@ -3,11 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        maroon: "#4e0822",
-        "dark-orange": "#e14e2c",
-        "light-orange": "#eb7d32",
         "main-yellow": "#efc243",
-        tan: "#e7e3d2",
+        "main-brown": "#a68f5d",
+        "main-tan": "#ffefca",
+        "main-green": "#005249",
       },
     },
   },
