@@ -14,7 +14,7 @@ const YearSelectors = () => {
           <h2 className="text-6xl geist leading-none text-gray-800">
             Search By Year
           </h2>
-          <div className="w-1/5 border-t-2 border-dark-orange my-2"></div>
+          <div className="w-1/5 border-t-2 border-main-orange my-2"></div>
           <p className="text-gray-600 max-w-lg mx-auto text-center">
             Browse through the history of Danceland with artists, dates, prices,
             images and most of all...memories.

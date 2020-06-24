@@ -47,7 +47,7 @@ const PostersHome = () => {
         <h2 className="text-6xl geist text-gray-800 leading-none">
           The Artisty Of Andy Jennings
         </h2>
-        <div className="w-1/5 border-t-2 border-maroon my-2"></div>
+        <div className="w-1/5 border-t-2 border-main-green my-2"></div>
         <p className="text-gray-700">
           Browse some of the magnificent poster designs advertising the
           Danceland acts.

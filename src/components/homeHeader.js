@@ -14,17 +14,32 @@ const HomeHeader = () => {
       <div className="flex w-full relative max-w-screen-xl mx-auto py-2">
         <ul className="flex justify-between w-full text-xl font-extrabold text-white">
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              className="border-b border-transparent hover:border-main-brown"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/">Bio</Link>
+            <Link
+              to="/bio"
+              className="border-b border-transparent hover:border-main-brown"
+            >
+              Bio
+            </Link>
           </li>
           <li>
-            <Link to="/earlyYears">Early Years</Link>
+            <Link
+              to="/earlyYears"
+              className="border-b border-transparent hover:border-main-brown"
+            >
+              Early Years
+            </Link>
           </li>
           <li>
             <button
-              className="flex relative focus:outline-none solway font-extrabold"
+              className="flex relative focus:outline-none solway font-extrabold border-b border-transparent hover:border-main-brown"
               onClick={() => setIsOpen(!isOpen)}
             >
               Search By Year
@@ -116,10 +131,20 @@ const HomeHeader = () => {
             )}
           </li>
           <li>
-            <Link to="/posters">Posters</Link>
+            <Link
+              to="/posters"
+              className="border-b border-transparent hover:border-main-brown"
+            >
+              Posters
+            </Link>
           </li>
           <li>
-            <Link to="/">Danceland Bandstand</Link>
+            <Link
+              to="/danceland-bandstand"
+              className="border-b border-transparent hover:border-main-brown"
+            >
+              Danceland Bandstand
+            </Link>
           </li>
         </ul>
       </div>
