@@ -379,9 +379,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -426,8 +423,18 @@ const year1955 = ({ data }) => {
                   )}
                 </h2>
                 {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
               </div>
@@ -451,11 +458,59 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
-                    <img src={node.data.img1[0].url} alt="" className="w-2/3" />
+                {node.data.orderId === 24 ? (
+                  <div className="flex justify-center w-2/3">
+                    <img
+                      src={node.data.img1[0].url}
+                      alt=""
+                      className="w-1/4 mr-2"
+                    />
+                    <p className="w-3/4 self-center ml-2">
+                      Jack Crosby Oatts was born in Dolliver, Iowa and earned
+                      degrees from Coe College and Drake University. While
+                      serving in the Navy during WWII he attended the Navy
+                      School of Music and was a member of the Armed Forces
+                      Broadcast Band in England. He started his professional
+                      music career arranging music for Lawrence Welk. He formed
+                      the Jack Oatts Orchestra and worked out of the Des Moines
+                      area. Jack was passionate about music education and taught
+                      music at area high schools Earlham and Jefferson. He has
+                      been recognized as the “Father of Jazz Education” in the
+                      state of Iowa. His son, Dick Oatts is a famous jazz
+                      saxophonist who played with Flim & the BB’s among others.
+                    </p>
                   </div>
-                )} */}
+                ) : (
+                  <>
+                    {node.data.img1 && (
+                      <div className="flex justify-center w-full">
+                        <img
+                          src={node.data.img1[0].url}
+                          alt=""
+                          className="w-2/3"
+                        />
+                      </div>
+                    )}
+                    {node.data.img2 && (
+                      <div className="flex justify-center w-full">
+                        <img
+                          src={node.data.img2[0].url}
+                          alt=""
+                          className="w-2/3"
+                        />
+                      </div>
+                    )}
+                    {node.data.img3 && (
+                      <div className="flex justify-center w-full">
+                        <img
+                          src={node.data.img3[0].url}
+                          alt=""
+                          className="w-2/3"
+                        />
+                      </div>
+                    )}
+                  </>
+                )}
               </div>
             )
           })}
@@ -478,8 +533,18 @@ const year1955 = ({ data }) => {
                   )}
                 </h2>
                 {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
               </div>
@@ -503,11 +568,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -529,11 +604,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -555,11 +640,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -581,11 +676,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -607,11 +712,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -633,11 +748,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -659,11 +784,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -685,11 +820,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
@@ -711,11 +856,21 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {/* {node.data.img1 && (
-                  <div className="flex justify-center flex-wrap w-full">
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                )} */}
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
               </div>
             )
           })}
