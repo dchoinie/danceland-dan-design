@@ -32,9 +32,14 @@ const Hero = () => {
     data.front.childImageSharp.fluid,
   ]
 
+  const newStack = [
+    `linear-gradient(rgba(153, 44, 66, 1), rgba(153, 44, 66, 1))`,
+    data.front.childImageSharp.fluid,
+  ]
+
   return (
     <BackgroundImage fluid={backgroundStack}>
-      <div className="h-screen" style={{ marginTop: "-78px" }}>
+      <div className="h-screen" style={{ marginTop: "-79px" }}>
         <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto h-full">
           <div
             className="flex flex-col items-center py-4"
@@ -56,3 +61,32 @@ const Hero = () => {
 }
 
 export default Hero
+
+{
+  /* <div
+      className="w-full bg-cp-blue"
+      style={{ height: "calc(100vh - 102.23px)" }}
+    >
+      <div className="flex justify-between h-full max-w-screen-xl mx-auto">
+        <div className="flex flex-col self-center">
+          <h1 className="text-10xl geist text-cp-white leading-none">
+            Danceland
+          </h1>
+          <h2 className="solway text-2xl text-cp-orange">
+            The History Of A Midwest Ballroom
+          </h2>
+          <p className="text-gray-500">By: Steve Wilson</p>
+        </div>
+        <div className="flex w-1/2">
+          <Img
+            fluid={data.front.childImageSharp.fluid}
+            className="w-full self-center border-4 border-cp-red rounded-md"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(153, 44, 66, 1), rgba(153, 44, 66, 1))",
+            }}
+          />
+        </div>
+      </div>
+    </div> */
+}

@@ -5,9 +5,9 @@ import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
 import Texture from "../images/textures/vintage_speckles.png"
 
-export const query1955 = graphql`
+export const query1956 = graphql`
   {
-    title1955: file(relativePath: { eq: "yearTitles/1955.png" }) {
+    title1956: file(relativePath: { eq: "yearTitles/1956.jpg" }) {
       childImageSharp {
         fluid {
           srcSet
@@ -17,7 +17,7 @@ export const query1955 = graphql`
       }
     }
     january: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "January" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "January" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -48,7 +48,7 @@ export const query1955 = graphql`
       }
     }
     february: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "February" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "February" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -79,7 +79,7 @@ export const query1955 = graphql`
       }
     }
     march: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "March" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "March" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -110,7 +110,7 @@ export const query1955 = graphql`
       }
     }
     april: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "April" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "April" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -141,7 +141,7 @@ export const query1955 = graphql`
       }
     }
     may: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "May" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "May" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -172,7 +172,7 @@ export const query1955 = graphql`
       }
     }
     june: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "June" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "June" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -203,7 +203,7 @@ export const query1955 = graphql`
       }
     }
     july: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "July" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "July" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -234,7 +234,7 @@ export const query1955 = graphql`
       }
     }
     august: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "August" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "August" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -266,7 +266,7 @@ export const query1955 = graphql`
     }
     september: allAirtable(
       filter: {
-        table: { eq: "data1955" }
+        table: { eq: "data1956" }
         data: { month: { eq: "September" } }
       }
       sort: { fields: data___orderId }
@@ -299,7 +299,7 @@ export const query1955 = graphql`
       }
     }
     october: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "October" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "October" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -330,7 +330,7 @@ export const query1955 = graphql`
       }
     }
     november: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "November" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "November" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -361,7 +361,7 @@ export const query1955 = graphql`
       }
     }
     december: allAirtable(
-      filter: { table: { eq: "data1955" }, data: { month: { eq: "December" } } }
+      filter: { table: { eq: "data1956" }, data: { month: { eq: "December" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -391,20 +391,16 @@ export const query1955 = graphql`
   }
 `
 
-const year1955 = ({ data }) => {
+const year1956 = ({ data }) => {
   return (
     <Layout>
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-        }}
-      >
+      <div>
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
-            img={data.title1955.childImageSharp.fluid}
-            summary="1955 was the year live rock and roll came to Cedar Rapids. The date was October 6th and the band was Bill Haley &amp; His Comets. That would signal the beginning of Danceland being the place for eastern Iowans to witness live rock and roll. Later that month Boyd Bennett &amp; His Rockets, became the second rock and rollers to make an appearance. Also gracing the Danceland stage in 1955 were the innovating orchestra of Sauter-Finegan, polka great “Whoopee” John Wilfahrt &amp; His Orchestra and Yankton South Dakota’s popular WNAX Bohemian Band. Major country acts include Pee Wee King &amp; His Golden West Cowboys and Bob Wills &amp; His Texas Playboys."
+            img={data.title1956.childImageSharp.fluid}
+            summary="National acts that played at Danceland in 1956 include: Boyd Bennett & His Rockets, Wanda Jackson, Faron Young, Webb Pierce, Marvin Rainwater, Porter Wagoner, Hank Thompson & His Bravos Valley Boys, Red Sovine, Bill Wimberly & His Country Rhythm Boys, Bobby Lord, Jimmy & Johnny, Rusty Draper, Dick Mango & His Orchestra, Ray Pearl & His Musical Gems, Six Fat Dutchmen, “Whoopee” John Wilfahrt & His Orchestra"
           />
-          <MonthTitle month="January" year="1955" />
+          <MonthTitle month="January" year="1956" />
           {data.january.edges.map(({ node }) => {
             return (
               <div
@@ -440,7 +436,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="February" year="1955" />
+          <MonthTitle month="February" year="1956" />
           {data.february.edges.map(({ node }) => {
             return (
               <div
@@ -458,64 +454,26 @@ const year1955 = ({ data }) => {
                     </span>
                   )}
                 </h2>
-                {node.data.orderId === 24 ? (
-                  <div className="flex justify-center w-2/3">
-                    <img
-                      src={node.data.img1[0].url}
-                      alt=""
-                      className="w-1/4 mr-2"
-                    />
-                    <p className="w-3/4 self-center ml-2">
-                      Jack Crosby Oatts was born in Dolliver, Iowa and earned
-                      degrees from Coe College and Drake University. While
-                      serving in the Navy during WWII he attended the Navy
-                      School of Music and was a member of the Armed Forces
-                      Broadcast Band in England. He started his professional
-                      music career arranging music for Lawrence Welk. He formed
-                      the Jack Oatts Orchestra and worked out of the Des Moines
-                      area. Jack was passionate about music education and taught
-                      music at area high schools Earlham and Jefferson. He has
-                      been recognized as the “Father of Jazz Education” in the
-                      state of Iowa. His son, Dick Oatts is a famous jazz
-                      saxophonist who played with Flim &amp; the BB’s among
-                      others.
-                    </p>
+                {node.data.img1 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img1[0].url} alt="" className="w-2/3" />
                   </div>
-                ) : (
-                  <>
-                    {node.data.img1 && (
-                      <div className="flex justify-center w-full">
-                        <img
-                          src={node.data.img1[0].url}
-                          alt=""
-                          className="w-2/3"
-                        />
-                      </div>
-                    )}
-                    {node.data.img2 && (
-                      <div className="flex justify-center w-full">
-                        <img
-                          src={node.data.img2[0].url}
-                          alt=""
-                          className="w-2/3"
-                        />
-                      </div>
-                    )}
-                    {node.data.img3 && (
-                      <div className="flex justify-center w-full">
-                        <img
-                          src={node.data.img3[0].url}
-                          alt=""
-                          className="w-2/3"
-                        />
-                      </div>
-                    )}
-                  </>
+                )}
+                {node.data.img2 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img2[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 )}
               </div>
             )
           })}
-          <MonthTitle month="March" year="1955" />
+          <MonthTitle month="March" year="1956" />
           {data.march.edges.map(({ node }) => {
             return (
               <div
@@ -551,7 +509,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="April" year="1955" />
+          <MonthTitle month="April" year="1956" />
           {data.april.edges.map(({ node }) => {
             return (
               <div
@@ -587,7 +545,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="May" year="1955" />
+          <MonthTitle month="May" year="1956" />
           {data.may.edges.map(({ node }) => {
             return (
               <div
@@ -623,7 +581,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="June" year="1955" />
+          <MonthTitle month="June" year="1956" />
           {data.june.edges.map(({ node }) => {
             return (
               <div
@@ -659,7 +617,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="July" year="1955" />
+          <MonthTitle month="July" year="1956" />
           {data.july.edges.map(({ node }) => {
             return (
               <div
@@ -695,7 +653,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="August" year="1955" />
+          <MonthTitle month="August" year="1956" />
           {data.august.edges.map(({ node }) => {
             return (
               <div
@@ -731,7 +689,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="September" year="1955" />
+          <MonthTitle month="September" year="1956" />
           {data.september.edges.map(({ node }) => {
             return (
               <div
@@ -767,7 +725,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="October" year="1955" />
+          <MonthTitle month="October" year="1956" />
           {data.october.edges.map(({ node }) => {
             return (
               <div
@@ -803,7 +761,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="November" year="1955" />
+          <MonthTitle month="November" year="1956" />
           {data.november.edges.map(({ node }) => {
             return (
               <div
@@ -839,7 +797,7 @@ const year1955 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="December" year="1955" />
+          <MonthTitle month="December" year="1956" />
           {data.december.edges.map(({ node }) => {
             return (
               <div
@@ -881,4 +839,4 @@ const year1955 = ({ data }) => {
   )
 }
 
-export default year1955
+export default year1956

@@ -59,17 +59,17 @@ const HomeHeader = () => {
                       </Link>
                     </li>
                     <li className="my-1">
-                      <Link to="/" className="flex">
+                      <Link to="/1956" className="flex">
                         <FaRegCalendarAlt className="self-center mr-2" /> 1956
                       </Link>
                     </li>
                     <li className="my-1">
-                      <Link to="/" className="flex">
+                      <Link to="/1957" className="flex">
                         <FaRegCalendarAlt className="self-center mr-2" /> 1957
                       </Link>
                     </li>
                     <li className="my-1">
-                      <Link to="/" className="flex">
+                      <Link to="/1958" className="flex">
                         <FaRegCalendarAlt className="self-center mr-2" /> 1958
                       </Link>
                     </li>

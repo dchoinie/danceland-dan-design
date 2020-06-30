@@ -7,10 +7,13 @@ import YearSelectors from "../components/yearSelectors"
 import PostersHome from "../components/postersHome"
 import Bandstand from "../components/bandstand"
 import About from "../components/about"
+import RetroHeader from "../components/retroHeader"
 
 const IndexPage = () => (
+  // <HomeLayout>
   <HomeLayout>
     <SEO title="Home" />
+    {/* <RetroHeader /> */}
     <Hero />
     <Welcome />
     <YearSelectors />
