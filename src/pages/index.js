@@ -8,19 +8,22 @@ import PostersHome from "../components/postersHome"
 import Bandstand from "../components/bandstand"
 import About from "../components/about"
 import RetroHeader from "../components/retroHeader"
+import RetroHero from "../components/retroHero"
 
 const IndexPage = () => (
   // <HomeLayout>
-  <HomeLayout>
+  <>
     <SEO title="Home" />
-    {/* <RetroHeader /> */}
-    <Hero />
+    <RetroHeader />
+    {/* <Hero /> */}
+    <RetroHero />
     <Welcome />
     <YearSelectors />
     <About />
     <PostersHome />
     <Bandstand />
-  </HomeLayout>
+  </>
+  // </HomeLayout>
 )
 
 export default IndexPage

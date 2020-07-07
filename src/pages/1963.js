@@ -5,9 +5,9 @@ import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
 import Texture from "../images/textures/vintage_speckles.png"
 
-export const query1958 = graphql`
+export const query1963 = graphql`
   {
-    title1958: file(relativePath: { eq: "yearTitles/1958.jpg" }) {
+    title1963: file(relativePath: { eq: "yearTitles/1963.jpg" }) {
       childImageSharp {
         fluid {
           srcSet
@@ -17,7 +17,7 @@ export const query1958 = graphql`
       }
     }
     january: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "January" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "January" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -48,7 +48,7 @@ export const query1958 = graphql`
       }
     }
     february: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "February" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "February" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -79,7 +79,7 @@ export const query1958 = graphql`
       }
     }
     march: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "March" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "March" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -110,7 +110,7 @@ export const query1958 = graphql`
       }
     }
     april: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "April" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "April" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -141,7 +141,7 @@ export const query1958 = graphql`
       }
     }
     may: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "May" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "May" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -172,7 +172,7 @@ export const query1958 = graphql`
       }
     }
     june: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "June" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "June" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -203,7 +203,7 @@ export const query1958 = graphql`
       }
     }
     july: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "July" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "July" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -234,7 +234,7 @@ export const query1958 = graphql`
       }
     }
     august: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "August" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "August" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -266,7 +266,7 @@ export const query1958 = graphql`
     }
     september: allAirtable(
       filter: {
-        table: { eq: "data1958" }
+        table: { eq: "data1963" }
         data: { month: { eq: "September" } }
       }
       sort: { fields: data___orderId }
@@ -299,7 +299,7 @@ export const query1958 = graphql`
       }
     }
     october: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "October" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "October" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -330,7 +330,7 @@ export const query1958 = graphql`
       }
     }
     november: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "November" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "November" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -361,7 +361,7 @@ export const query1958 = graphql`
       }
     }
     december: allAirtable(
-      filter: { table: { eq: "data1958" }, data: { month: { eq: "December" } } }
+      filter: { table: { eq: "data1963" }, data: { month: { eq: "December" } } }
       sort: { fields: data___orderId }
     ) {
       edges {
@@ -391,16 +391,16 @@ export const query1958 = graphql`
   }
 `
 
-const year1958 = ({ data }) => {
+const year1963 = ({ data }) => {
   return (
     <Layout>
       <div>
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
-            img={data.title1958.childImageSharp.fluid}
-            summary="National acts that played at Danceland in 1956 include: Boyd Bennett & His Rockets, Wanda Jackson, Faron Young, Webb Pierce, Marvin Rainwater, Porter Wagoner, Hank Thompson & His Bravos Valley Boys, Red Sovine, Bill Wimberly & His Country Rhythm Boys, Bobby Lord, Jimmy & Johnny, Rusty Draper, Dick Mango & His Orchestra, Ray Pearl & His Musical Gems, Six Fat Dutchmen, “Whoopee” John Wilfahrt & His Orchestra"
+            img={data.title1963.childImageSharp.fluid}
+            summary="National acts that played at Danceland in 1963 include - The Beach Boys, 4 Seasons, Chubby Checker, Conway Twitty, Dion, Roy Orbison, Little Peggy March, The Fendermen, The Ventures, Freddy Cannon, Jerry Lee Lewis, The Everly Brothers, Sandy Nelson, Bobby Vinton, Pastel Six, Dick &amp; Dee Dee, Johnny Tillotson, Paul &amp; Paula, Crickets, Timi Yuro, The Kingsmen, Tommy Roe, Jimmy Gilmer &amp; The Fireballs, Brian Hyland, Lou Christie, Jay &amp; The Americans, Bill Black’s Combo, Joey Dee &amp; The Starliters, Johnny Cymbal, Steve Alaimo, Johnny &amp; The Hurricanes, Myron Lee &amp; The Caddies, Charlie Russo, The Velaires, Wanda Jackson, Burch Ray &amp; The Walkers, Lonnie Mack, The Champs, Little Jimmy Dickens, The Strangers, Six Fat Dutchmen, George Hamilton IV"
           />
-          <MonthTitle month="January" year="1958" />
+          <MonthTitle month="January" year="1963" />
           {data.january.edges.map(({ node }) => {
             return (
               <div
@@ -436,7 +436,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="February" year="1958" />
+          <MonthTitle month="February" year="1963" />
           {data.february.edges.map(({ node }) => {
             return (
               <div
@@ -469,11 +469,10 @@ const year1958 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                )}
               </div>
             )
           })}
-          <MonthTitle month="March" year="1958" />
+          <MonthTitle month="March" year="1963" />
           {data.march.edges.map(({ node }) => {
             return (
               <div
@@ -509,7 +508,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="April" year="1958" />
+          <MonthTitle month="April" year="1963" />
           {data.april.edges.map(({ node }) => {
             return (
               <div
@@ -545,7 +544,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="May" year="1958" />
+          <MonthTitle month="May" year="1963" />
           {data.may.edges.map(({ node }) => {
             return (
               <div
@@ -581,7 +580,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="June" year="1958" />
+          <MonthTitle month="June" year="1963" />
           {data.june.edges.map(({ node }) => {
             return (
               <div
@@ -617,7 +616,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="July" year="1958" />
+          <MonthTitle month="July" year="1963" />
           {data.july.edges.map(({ node }) => {
             return (
               <div
@@ -653,7 +652,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="August" year="1958" />
+          <MonthTitle month="August" year="1963" />
           {data.august.edges.map(({ node }) => {
             return (
               <div
@@ -689,7 +688,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="September" year="1958" />
+          <MonthTitle month="September" year="1963" />
           {data.september.edges.map(({ node }) => {
             return (
               <div
@@ -725,7 +724,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="October" year="1958" />
+          <MonthTitle month="October" year="1963" />
           {data.october.edges.map(({ node }) => {
             return (
               <div
@@ -761,7 +760,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="November" year="1958" />
+          <MonthTitle month="November" year="1963" />
           {data.november.edges.map(({ node }) => {
             return (
               <div
@@ -797,7 +796,7 @@ const year1958 = ({ data }) => {
               </div>
             )
           })}
-          <MonthTitle month="December" year="1958" />
+          <MonthTitle month="December" year="1963" />
           {data.december.edges.map(({ node }) => {
             return (
               <div
@@ -839,4 +838,4 @@ const year1958 = ({ data }) => {
   )
 }
 
-export default year1958
+export default year1963

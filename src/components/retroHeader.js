@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FaStar } from "react-icons/fa"
+import { FaStar, FaSearch } from "react-icons/fa"
 import Img from "gatsby-image"
 
 const RetroHeader = () => {
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "danceland_logo_orange_stars.png" }) {
+      logo: file(relativePath: { eq: "danceland_logo_black.png" }) {
         childImageSharp {
           fluid {
             src
@@ -27,25 +27,38 @@ const RetroHeader = () => {
     }
   `)
   return (
-    <div className="bg-cp-blue pt-2">
-      <div className="border-t-2 border-b-2 border-dashed border-cp-white py-2">
-        <div className="flex justify-center text-gray-200 max-w-screen-xl mx-auto text-cp-white">
-          <ul className="flex self-center w-2/5 justify-around">
-            <li className="text-lg solway mx-4">Home</li>
-            <FaStar className="self-center text-xs text-cp-orange" />
-            <li className="text-lg solway mx-4">Bio</li>
-            <FaStar className="self-center text-xs text-cp-orange" />
-            <li className="text-lg solway mx-4">Early Years</li>
-          </ul>
-          <div className="flex justify-center w-1/5 h-full relative">
-            <Img fluid={data.logo.childImageSharp.fluid} className="w-full" />
-          </div>
-          <ul className="flex self-center w-2/5 justify-around">
-            <li className="text-lg solway mx-4">Search By Year</li>
-            <FaStar className="self-center text-xs text-cp-orange" />
-            <li className="text-lg solway mx-4">Posters</li>
-            <FaStar className="self-center text-xs text-cp-orange" />
-            <li className="text-lg solway mx-4">Bandstand</li>
+    <div className="py-4">
+      <div className="flex flex-col items-center">
+        <Img
+          fluid={data.logo.childImageSharp.fluid}
+          className="w-1/5"
+          style={{ transform: "rotate(-5deg)" }}
+        />
+      </div>
+      <div className="max-w-screen-xl mx-auto mt-6">
+        <div className="flex w-full">
+          <ul className="flex justify-between w-full text-lg uppercase">
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Home
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Bio
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Early Years
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Search By Year
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Posters
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Danceland Bandstand
+            </li>
+            <li className="flex hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              <FaSearch className="self-center" />
+            </li>
           </ul>
         </div>
       </div>
