@@ -410,7 +410,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -446,7 +446,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -469,7 +469,6 @@ const year1957 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                )}
               </div>
             )
           })}
@@ -483,7 +482,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -519,7 +518,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -555,7 +554,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -591,7 +590,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -627,7 +626,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -663,7 +662,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -699,7 +698,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -735,7 +734,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -771,7 +770,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">
@@ -807,7 +806,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-main-yellow underline">
                   {node.data.fullDate}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl geist leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                   {node.data.price && (
                     <span className="text-xl text-dark-orange self-center mx-2">

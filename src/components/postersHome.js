@@ -37,12 +37,7 @@ const PostersHome = () => {
     }
   `)
   return (
-    <div
-      className="py-24"
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-      }}
-    >
+    <div className="py-24 bg-transparent">
       <div className="flex flex-col items-center max-w-screen-xl mx-auto">
         <h2 className="text-6xl geist text-gray-800 leading-none">
           The Artisty Of Andy Jennings

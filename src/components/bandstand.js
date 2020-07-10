@@ -46,11 +46,7 @@ const Bandstand = () => {
     }
   `)
   return (
-    <div
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-      }}
-    >
+    <div className="bg-transparent">
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex flex-col items-center">
           <Img fluid={data.bandstand.childImageSharp.fluid} className="w-64" />

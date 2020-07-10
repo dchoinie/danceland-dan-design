@@ -27,7 +27,7 @@ const RetroHeader = () => {
     }
   `)
   return (
-    <div className="py-4">
+    <div className="pt-4">
       <div className="flex flex-col items-center">
         <Img
           fluid={data.logo.childImageSharp.fluid}
@@ -36,8 +36,8 @@ const RetroHeader = () => {
         />
       </div>
       <div className="max-w-screen-xl mx-auto mt-6">
-        <div className="flex w-full">
-          <ul className="flex justify-between w-full text-lg uppercase">
+        <div className="flex w-full border-double border-t-4 border-b-2 border-cp-gray py-2">
+          <ul className="flex justify-between w-full text-lg uppercase text-gray-700">
             <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
               Home
             </li>

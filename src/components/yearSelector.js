@@ -30,6 +30,7 @@ export default class YearSelector extends Component {
         className="flex flex-col items-center justify-center transform hover:scale-150 transition duration-500 ease-in-out"
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover}
+        style={{ maxWidth: "200px" }}
       >
         <SpinnerImg
           spinnerClass={`${this.state.isHovered ? "rotate" : ""} w-full`}

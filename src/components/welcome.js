@@ -81,17 +81,12 @@ const Welcome = () => {
     }
   `)
   return (
-    <div
-      className=""
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-      }}
-    >
+    <div className="bg-transparent">
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex">
           <div className="flex w-1/2 mr-4 p-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-main-green rounded shadow-md">
+              <div className="bg-cp-orange rounded shadow-md">
                 <Img
                   fluid={data.opening.childImageSharp.fluid}
                   className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
@@ -113,7 +108,7 @@ const Welcome = () => {
                 Danceland stage through the years is impressive to say the
                 least.
               </p>
-              <div className="flex border-t-2 border-main-green w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-cp-orange w-1/2 my-4"></div>
             </div>
           </div>
         </div>
@@ -127,12 +122,12 @@ const Welcome = () => {
                 with Doris Day, Lawrence Welk, Sammy Kaye, Jack Teagarden, Eddy
                 Howard, Buddy Rich, Kay Kyser and Stan Kenton all swing by.
               </p>
-              <div className="flex border-t-2 border-main-brown w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-cp-red w-1/2 my-4"></div>
             </div>
           </div>
           <div className="flex w-1/2 ml-4 p-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-main-brown rounded shadow-md">
+              <div className="bg-cp-red rounded shadow-md">
                 <Img
                   fluid={data.cbasie.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
@@ -148,7 +143,7 @@ const Welcome = () => {
         <div className="flex">
           <div className="flex w-1/2 self-center mr-4 p-12">
             <figure className="flex w-full flex-col text-xs">
-              <div className="bg-main-orange rounded shadow-md">
+              <div className="bg-cp-blue rounded shadow-md">
                 <Img
                   fluid={data.rockCollage.childImageSharp.fluid}
                   className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
@@ -177,7 +172,7 @@ const Welcome = () => {
                 The Beach Boys, Mitch Ryder &amp; The Detroit Wheels, The Music
                 Machine, The Animals, The Hollies, The Yardbirds and many more.
               </p>
-              <div className="flex border-t-2 border-main-orange w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-cp-blue w-1/2 my-4"></div>
             </div>
           </div>
         </div>
@@ -191,12 +186,12 @@ const Welcome = () => {
                 Gibson, Johnny Horton, Faron Young, Jim Reeves, Conway Twitty,
                 Jimmy Dean and Roger Miller.
               </p>
-              <div className="flex border-t-2 border-main-yellow w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-cp-gray w-1/2 my-4"></div>
             </div>
           </div>
           <div className="flex w-1/2 ml-4 p-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-main-yellow rounded shadow-md">
+              <div className="bg-cp-gray rounded shadow-md">
                 <Img
                   fluid={data.countryCollage.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
