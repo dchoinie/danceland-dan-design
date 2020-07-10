@@ -9,9 +9,9 @@ export default class MonthHeader extends Component {
 
   render() {
     return (
-      <div className="flex bg-black w-full justify-center py-2">
-        <h2 className="text-white text-3xl lg:text-5xl uppercase geist">
-          {this.props.month}, {this.props.year}
+      <div className="flex bg-gray-300 w-full justify-center py-2 shadow-md">
+        <h2 className="text-gray-700 text-3xl lg:text-5xl uppercase geist">
+          {this.props.month} {this.props.year}
         </h2>
       </div>
     )

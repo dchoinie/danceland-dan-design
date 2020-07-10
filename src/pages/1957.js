@@ -407,8 +407,8 @@ const year1957 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-cp-orange">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl geist leading-none text-gray-700 flex text-center leading-none">
                   {node.data.artist}
