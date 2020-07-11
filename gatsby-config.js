@@ -60,6 +60,9 @@ module.exports = {
           {
             family: `Solway`,
           },
+          {
+            family: `Oswald`,
+          },
         ],
       },
     },

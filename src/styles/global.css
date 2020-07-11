@@ -84,6 +84,10 @@ hr.style-eight:after {
   font-family: "Solway";
 }
 
+.oswald {
+  font-family: "Oswald";
+}
+
 .rotate {
   animation: rotation 2s infinite linear;
 }

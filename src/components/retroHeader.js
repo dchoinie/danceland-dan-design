@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { FaStar, FaSearch } from "react-icons/fa"
 import Img from "gatsby-image"
 
@@ -38,9 +38,11 @@ const RetroHeader = () => {
       <div className="max-w-screen-xl mx-auto mt-6">
         <div className="flex w-full border-double border-t-4 border-b-2 border-cp-gray py-2">
           <ul className="flex justify-between w-full text-lg uppercase text-gray-700">
-            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
-              Home
-            </li>
+            <Link to="/">
+              <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+                Home
+              </li>
+            </Link>
             <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
               Bio
             </li>
@@ -55,6 +57,12 @@ const RetroHeader = () => {
             </li>
             <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
               Danceland Bandstand
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Managers
+            </li>
+            <li className="hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
+              Local Bands
             </li>
             <li className="flex hover:bg-blue-200 p-1 border-t border-b border-transparent hover:border-black">
               <FaSearch className="self-center" />
