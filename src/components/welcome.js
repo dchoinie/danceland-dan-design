@@ -84,9 +84,9 @@ const Welcome = () => {
     <div className="bg-transparent">
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex">
-          <div className="flex w-1/2 mr-4 p-12">
+          <div className="flex w-1/2 mr-4 px-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-cp-orange rounded shadow-md">
+              <div className="bg-black rounded shadow-md">
                 <Img
                   fluid={data.opening.childImageSharp.fluid}
                   className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
@@ -99,8 +99,8 @@ const Welcome = () => {
             </figure>
           </div>
           <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 p-12">
-              <p>
+            <div className="text-xl self-center text-gray-700 px-12">
+              <p className="">
                 Welcome to the website that is dedicated to preserving the
                 history of Danceland Ballroom in Cedar Rapids, Iowa. You can
                 view the history from the grand opening in 1926 to its razing in
@@ -108,13 +108,13 @@ const Welcome = () => {
                 Danceland stage through the years is impressive to say the
                 least.
               </p>
-              <div className="flex border-t-2 border-cp-orange w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
             </div>
           </div>
         </div>
         <div className="flex">
           <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 p-12">
+            <div className="text-xl self-center text-gray-700 px-12">
               <p>
                 The “Big Band” years saw the orchestras of Duke Ellington, Glenn
                 Miller, Count Basie, Benny Goodman, Tommy Dorsey with Frank
@@ -122,12 +122,12 @@ const Welcome = () => {
                 with Doris Day, Lawrence Welk, Sammy Kaye, Jack Teagarden, Eddy
                 Howard, Buddy Rich, Kay Kyser and Stan Kenton all swing by.
               </p>
-              <div className="flex border-t-2 border-cp-red w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 ml-4 p-12">
+          <div className="flex w-1/2 ml-4 px-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-cp-red rounded shadow-md">
+              <div className="bg-black rounded shadow-md">
                 <Img
                   fluid={data.cbasie.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
@@ -141,9 +141,9 @@ const Welcome = () => {
           </div>
         </div>
         <div className="flex">
-          <div className="flex w-1/2 self-center mr-4 p-12">
+          <div className="flex w-1/2 self-center mr-4 px-12">
             <figure className="flex w-full flex-col text-xs">
-              <div className="bg-cp-blue rounded shadow-md">
+              <div className="bg-black rounded shadow-md">
                 <Img
                   fluid={data.rockCollage.childImageSharp.fluid}
                   className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
@@ -159,6 +159,7 @@ const Welcome = () => {
           </div>
           <div className="flex w-1/2">
             <div className="text-xl text-gray-700 p-12 self-center">
+              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
               <p>
                 The rock &amp; roll era started in 1955 with the booking of Bill
                 Haley &amp; the Comets. Soon followed by Chuck Berry, Jerry Lee
@@ -172,13 +173,13 @@ const Welcome = () => {
                 The Beach Boys, Mitch Ryder &amp; The Detroit Wheels, The Music
                 Machine, The Animals, The Hollies, The Yardbirds and many more.
               </p>
-              <div className="flex border-t-2 border-cp-blue w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
             </div>
           </div>
         </div>
         <div className="flex">
           <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 p-12">
+            <div className="text-xl self-center text-gray-700 px-12">
               <p>
                 Not to forget the great country stars that includes Bob Wills
                 &amp; His Texas Playboys, Kitty Wells, Webb Pierce, Buck Owens,
@@ -186,12 +187,12 @@ const Welcome = () => {
                 Gibson, Johnny Horton, Faron Young, Jim Reeves, Conway Twitty,
                 Jimmy Dean and Roger Miller.
               </p>
-              <div className="flex border-t-2 border-cp-gray w-1/2 my-4"></div>
+              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
             </div>
           </div>
-          <div className="flex w-1/2 ml-4 p-12">
+          <div className="flex w-1/2 ml-4 px-12">
             <figure className="flex flex-col w-full text-xs">
-              <div className="bg-cp-gray rounded shadow-md">
+              <div className="bg-black rounded shadow-md">
                 <Img
                   fluid={data.countryCollage.childImageSharp.fluid}
                   className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
@@ -206,16 +207,19 @@ const Welcome = () => {
             </figure>
           </div>
         </div>
-        <div className="flex flex-col w-full items-center">
-          <h2 className="text-6xl geist text-center text-gray-800">
+      </div>
+      <div className="bg-red-600 py-4">
+        <div className="flex flex-col w-full items-center max-w-screen-xl mx-auto">
+          <h2 className="text-5xl text-center text-white uppercase leading-tight">
             It’s all here - the national acts, the local talent, the hits, the
             misses – the memories. Check It Out!
           </h2>
-          <p className="text-base solway text-center text-gray-600">
-            <em>
+          <div className="border-t border-white w-1/4 my-2"></div>
+          <p className="text-center text-black">
+            {/* <em>
               Special Thanks to Ann Duggan, Dennis Hertle, Tim Canfield, Dan
               Choiniere, Tate Preston, Kathy Wall
-            </em>
+            </em> */}
           </p>
         </div>
       </div>

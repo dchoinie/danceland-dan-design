@@ -45,11 +45,13 @@ class EarlyYears extends Component {
       <Layout>
         <div>
           <InstantSearch indexName="sortByOrderId" searchClient={searchClient}>
-            <div className="flex flex-col items-center py-12 bg-gray-400">
-              <h2 className="text-4xl max-w-2xl text-center pb-6 geist">
-                Explore Danceland acts between the years <br />
-                1926 - 1954. Search by artist name or date.
-              </h2>
+            <div className="flex flex-col items-center py-12 bg-red-600">
+              <div className="max-w-screen-xl mx-auto">
+                <h2 className="text-4xl text-center pb-6 text-white">
+                  Explore Danceland acts between the years 1926 - 1954. Search
+                  by artist name or date.
+                </h2>
+              </div>
               <SearchBox />
             </div>
             <Configure hitsPerPage={616} />

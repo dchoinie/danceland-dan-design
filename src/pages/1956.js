@@ -407,17 +407,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -443,17 +443,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -469,7 +469,6 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                )}
               </div>
             )
           })}
@@ -480,17 +479,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -516,17 +515,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -552,17 +551,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -588,17 +587,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -624,17 +623,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -660,17 +659,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -696,17 +695,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -732,17 +731,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -768,17 +767,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />
@@ -804,17 +803,17 @@ const year1956 = ({ data }) => {
                 key={node.id}
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
-                <p className="text-xl text-main-yellow underline">
-                  {node.data.fullDate}
+                <p className="text-xl text-red-600">
+                  {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl geist text-gray-700 flex text-center">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
                   {node.data.artist}
-                  {node.data.price && (
-                    <span className="text-xl text-dark-orange self-center mx-2">
-                      | {node.data.price}
-                    </span>
-                  )}
                 </h2>
+                {node.data.price && (
+                  <p className="text-lg text-gray-600 self-center mx-2">
+                    {node.data.price}
+                  </p>
+                )}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />

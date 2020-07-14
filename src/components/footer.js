@@ -21,48 +21,48 @@ const Footer = () => {
           <div className="flex w-full justify-between">
             <ul className="flex flex-col">
               <li>
-                <Link to="/">1955</Link>
+                <Link to="/1955">1955</Link>
               </li>
               <li>
-                <Link to="/">1956</Link>
+                <Link to="/1956">1956</Link>
               </li>
               <li>
-                <Link to="/">1957</Link>
+                <Link to="/1957">1957</Link>
               </li>
               <li>
-                <Link to="/">1958</Link>
+                <Link to="/1958">1958</Link>
               </li>
               <li>
-                <Link to="/">1959</Link>
+                <Link to="/1959">1959</Link>
               </li>
               <li>
-                <Link to="/">1960</Link>
+                <Link to="/1960">1960</Link>
               </li>
               <li>
-                <Link to="/">1961</Link>
+                <Link to="/1961">1961</Link>
               </li>
             </ul>
             <ul className="flex flex-col">
               <li>
-                <Link to="/">1962</Link>
+                <Link to="/1962">1962</Link>
               </li>
               <li>
-                <Link to="/">1963</Link>
+                <Link to="/1963">1963</Link>
               </li>
               <li>
-                <Link to="/">1964</Link>
+                <Link to="/1964">1964</Link>
               </li>
               <li>
-                <Link to="/">1965</Link>
+                <Link to="/1965">1965</Link>
               </li>
               <li>
-                <Link to="/">1966</Link>
+                <Link to="/1966">1966</Link>
               </li>
               <li>
-                <Link to="/">1967</Link>
+                <Link to="/1967">1967</Link>
               </li>
               <li>
-                <Link to="/">1968</Link>
+                <Link to="/1968">1968</Link>
               </li>
             </ul>
           </div>

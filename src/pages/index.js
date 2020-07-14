@@ -15,16 +15,15 @@ const IndexPage = () => (
   // <HomeLayout>
   <div style={{ backgroundImage: `url(${Texture})` }}>
     <SEO title="Home" />
-    <RetroHeader />
-    {/* <Hero /> */}
-    <RetroHero />
-    <Welcome />
-    <YearSelectors />
-    <About />
-    <PostersHome />
-    <Bandstand />
+    <HomeLayout>
+      <RetroHero />
+      <Welcome />
+      <YearSelectors />
+      <About />
+      <PostersHome />
+      <Bandstand />
+    </HomeLayout>
   </div>
-  // </HomeLayout>
 )
 
 export default IndexPage

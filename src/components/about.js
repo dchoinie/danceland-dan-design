@@ -22,15 +22,13 @@ const About = () => {
     <div className="bg-transparent">
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex flex-col items-center">
-          <h2 className="text-6xl geist leading-none text-gray-800">
-            Danceland Bio
-          </h2>
-          <div className="w-1/5 border-t-2 border-main-yellow my-2"></div>
+          <h2 className="text-6xl leading-none text-gray-800">Danceland Bio</h2>
+          <div className="w-1/5 border-t-2 border-red-600 my-2"></div>
           <p className="text-gray-600 text-center max-w-xl">
             Learn more about the history of "Iowa's Smartest Ballroom" located
             in the heart of downtown Cedar Rapids, IA spanning from 1926 - 1968.
           </p>
-          <div className="bg-main-yellow rounded shadow-md w-1/2 my-12">
+          <div className="bg-red-600 rounded shadow-md w-1/2 my-12">
             <Img
               fluid={data.front.childImageSharp.fluid}
               className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
@@ -38,7 +36,7 @@ const About = () => {
           </div>
           <Link
             to="/bio"
-            className="flex justify-center bg-main-yellow hover:bg-yellow-700 text-white px-4 py-2 rounded-md text-xl"
+            className="flex justify-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-xl"
           >
             Danceland Bio <FaAngleRight className="self-center ml-2" />
           </Link>

@@ -50,7 +50,7 @@ const Bandstand = () => {
       <div className="max-w-screen-xl mx-auto py-24">
         <div className="flex flex-col items-center">
           <Img fluid={data.bandstand.childImageSharp.fluid} className="w-64" />
-          <div className="w-1/5 border-t-2 border-main-brown my-2"></div>
+          <div className="w-1/5 border-t-2 border-red-600 my-2"></div>
           <p className="text-gray-600 max-w-2xl text-center py-6">
             In December 1957 Danceland’s Darlowe Olsen created a local
             television dance program that was modeled/patterned after Dick
@@ -74,8 +74,8 @@ const Bandstand = () => {
             />
           </div>
           <Link
-            to="/dancelandbandstand"
-            className="flex justify-center bg-light-orange hover:bg-orange-700 text-white px-4 py-2 rounded-md text-xl"
+            to="/danceland-bandstand"
+            className="flex justify-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-xl"
           >
             Danceland Bandstand <FaAngleRight className="self-center ml-2" />
           </Link>

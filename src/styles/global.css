@@ -1,5 +1,16 @@
 @tailwind base;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald";
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
 p,
 ul,
 li,

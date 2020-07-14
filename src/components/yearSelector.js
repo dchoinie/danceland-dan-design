@@ -27,17 +27,17 @@ export default class YearSelector extends Component {
     return (
       <Link
         to={this.props.to}
-        className="flex flex-col items-center justify-center transform hover:scale-150 transition duration-500 ease-in-out"
+        className="flex flex-col items-center justify-center transform hover:scale-110 transition duration-500 ease-in-out"
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover}
-        style={{ maxWidth: "200px" }}
+        style={{ width: "200px" }}
       >
         <SpinnerImg
           spinnerClass={`${this.state.isHovered ? "rotate" : ""} w-full`}
         />
         <h2
-          className={`absolute text-5xl geist ${
-            this.state.isHovered ? "text-white" : "text-gray-300"
+          className={`absolute text-5xl ${
+            this.state.isHovered ? "text-white" : "text-gray-400"
           }`}
         >
           {this.props.year}
