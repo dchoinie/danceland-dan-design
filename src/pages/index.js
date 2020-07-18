@@ -8,11 +8,9 @@ import YearSelectors from "../components/yearSelectors"
 import PostersHome from "../components/postersHome"
 import Bandstand from "../components/bandstand"
 import About from "../components/about"
-import RetroHeader from "../components/retroHeader"
 import RetroHero from "../components/retroHero"
 
 const IndexPage = () => (
-  // <HomeLayout>
   <div style={{ backgroundImage: `url(${Texture})` }}>
     <SEO title="Home" />
     <HomeLayout>

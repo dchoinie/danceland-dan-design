@@ -53,6 +53,7 @@ module.exports = {
         path: `${__dirname}/src/fonts/`,
       },
     },
+    `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
