@@ -43,6 +43,11 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
           }
         }
       }
@@ -74,6 +79,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -105,6 +113,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -136,6 +147,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -167,6 +181,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -198,6 +215,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -229,6 +249,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -260,6 +283,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -294,6 +320,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -325,6 +354,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -356,6 +388,9 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -384,6 +419,11 @@ export const query1966 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio2artist
           }
         }
       }
@@ -432,6 +472,23 @@ const year1966 = ({ data }) => {
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
+                )}
+                {node.data.audio1 && (
+                  <>
+                    <div className="flex w-full justify-center mt-3">
+                      <audio
+                        src={node.data.audio1[0].url}
+                        controls
+                        controlsList="nodownload"
+                        preload="true"
+                      ></audio>
+                    </div>
+                    <div className="flex">
+                      <p className="text-gray-700 text-lg">
+                        {node.data.audio1title} - {node.data.audio1artist}
+                      </p>
+                    </div>
+                  </>
                 )}
               </div>
             )

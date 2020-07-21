@@ -384,6 +384,9 @@ export const query1968 = graphql`
             price
             weekday
             year
+            img1 {
+              url
+            }
           }
         }
       }

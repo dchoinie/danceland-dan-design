@@ -35,9 +35,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -64,9 +61,6 @@ export const query1955 = graphql`
               url
             }
             img3 {
-              url
-            }
-            img4 {
               url
             }
             month
@@ -97,9 +91,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -126,9 +117,6 @@ export const query1955 = graphql`
               url
             }
             img3 {
-              url
-            }
-            img4 {
               url
             }
             month
@@ -159,9 +147,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -188,9 +173,6 @@ export const query1955 = graphql`
               url
             }
             img3 {
-              url
-            }
-            img4 {
               url
             }
             month
@@ -221,9 +203,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -250,9 +229,6 @@ export const query1955 = graphql`
               url
             }
             img3 {
-              url
-            }
-            img4 {
               url
             }
             month
@@ -286,9 +262,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -317,9 +290,6 @@ export const query1955 = graphql`
             img3 {
               url
             }
-            img4 {
-              url
-            }
             month
             orderId
             price
@@ -346,9 +316,6 @@ export const query1955 = graphql`
               url
             }
             img3 {
-              url
-            }
-            img4 {
               url
             }
             month

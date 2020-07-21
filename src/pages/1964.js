@@ -43,6 +43,9 @@ export const query1964 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -325,6 +328,9 @@ export const query1964 = graphql`
             price
             weekday
             year
+            audio1 {
+              url
+            }
           }
         }
       }
@@ -431,6 +437,16 @@ const year1964 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.audio1 && (
+                  <div className="flex w-full justify-center mt-6">
+                    <audio
+                      src={node.data.audio1[0].url}
+                      controls
+                      controlsList="nodownload"
+                      preload="true"
+                    ></audio>
                   </div>
                 )}
               </div>
@@ -755,6 +771,16 @@ const year1964 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.audio1 && (
+                  <div className="flex w-full justify-center mt-6">
+                    <audio
+                      src={node.data.audio1[0].url}
+                      controls
+                      controlsList="nodownload"
+                      preload="true"
+                    ></audio>
                   </div>
                 )}
               </div>
