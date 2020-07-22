@@ -38,6 +38,9 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
@@ -46,6 +49,13 @@ export const query1964 = graphql`
             audio1 {
               url
             }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -72,11 +82,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -103,11 +126,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -134,11 +170,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -165,11 +214,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -196,11 +258,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -227,11 +302,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -258,11 +346,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -292,11 +393,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -323,6 +437,9 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
@@ -331,6 +448,13 @@ export const query1964 = graphql`
             audio1 {
               url
             }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -357,11 +481,24 @@ export const query1964 = graphql`
             img4 {
               url
             }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -385,11 +522,27 @@ export const query1964 = graphql`
             img3 {
               url
             }
+            img4 {
+              url
+            }
+            img5 {
+              url
+            }
             month
             orderId
             price
             weekday
             year
+            audio1 {
+              url
+            }
+            audio1title
+            audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
           }
         }
       }
@@ -439,16 +592,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.audio1 && (
-                  <div className="flex w-full justify-center mt-6">
-                    <audio
-                      src={node.data.audio1[0].url}
-                      controls
-                      controlsList="nodownload"
-                      preload="true"
-                    ></audio>
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -485,6 +674,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -521,6 +756,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -557,6 +838,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -593,6 +920,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -629,6 +1002,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -665,6 +1084,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -701,6 +1166,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -737,6 +1248,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -773,16 +1330,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.audio1 && (
-                  <div className="flex w-full justify-center mt-6">
-                    <audio
-                      src={node.data.audio1[0].url}
-                      controls
-                      controlsList="nodownload"
-                      preload="true"
-                    ></audio>
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -819,6 +1412,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -855,6 +1494,52 @@ const year1964 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}

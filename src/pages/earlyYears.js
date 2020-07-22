@@ -33,6 +33,15 @@ export const earlyYearsQuery = graphql`
           img2 {
             url
           }
+          img3 {
+            url
+          }
+          img4 {
+            url
+          }
+          img5 {
+            url
+          }
         }
       }
     }
@@ -69,24 +78,33 @@ const Hit = props => {
   return (
     <div className="my-6">
       <div className="flex flex-col justify-between h-full items-center rounded-md my-2 mx-auto p-6">
-        <p className="text-xl text-gray-700 underline">
-          {props.hit.data.fullDate}
-        </p>
-        <h2 className="text-5xl geist text-gray-800 flex text-center">
+        <p className="text-xl text-red-600">{props.hit.data.fullDate}</p>
+        <h2 className="text-5xl text-gray-800 flex text-center">
           {props.hit.data.artist}
         </h2>
         {props.hit.data.img1 && (
           <div className="flex justify-center w-full">
-            <img
-              src={props.hit.data.img1[0].url}
-              alt=""
-              className="w-2/3 shadow-md"
-            />
+            <img src={props.hit.data.img1[0].url} alt="" className="w-2/3" />
           </div>
         )}
         {props.hit.data.img2 && (
           <div className="flex justify-center w-full">
             <img src={props.hit.data.img2[0].url} alt="" className="w-2/3" />
+          </div>
+        )}
+        {props.hit.data.img3 && (
+          <div className="flex justify-center w-full">
+            <img src={props.hit.data.img3[0].url} alt="" className="w-2/3" />
+          </div>
+        )}
+        {props.hit.data.img4 && (
+          <div className="flex justify-center w-full">
+            <img src={props.hit.data.img4[0].url} alt="" className="w-2/3" />
+          </div>
+        )}
+        {props.hit.data.img5 && (
+          <div className="flex justify-center w-full">
+            <img src={props.hit.data.img5[0].url} alt="" className="w-2/3" />
           </div>
         )}
       </div>

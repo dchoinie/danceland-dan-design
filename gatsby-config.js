@@ -17,6 +17,15 @@ const EarlyYearsQuery = `
         img2 {
           url
         }
+        img3 {
+          url
+        }
+        img4 {
+          url
+        }
+        img5 {
+          url
+        }
       }
     }
   }

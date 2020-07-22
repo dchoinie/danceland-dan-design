@@ -973,6 +973,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1043,6 +1100,63 @@ const year1967 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
                   </div>
                 )}
                 <div className="flex">
@@ -1117,6 +1231,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1187,6 +1358,63 @@ const year1967 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
                   </div>
                 )}
                 <div className="flex">
@@ -1261,6 +1489,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1331,6 +1616,63 @@ const year1967 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
                   </div>
                 )}
                 <div className="flex">
@@ -1405,6 +1747,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1475,6 +1874,63 @@ const year1967 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
                   </div>
                 )}
                 <div className="flex">
@@ -1549,6 +2005,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1621,6 +2134,63 @@ const year1967 = ({ data }) => {
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1691,6 +2261,63 @@ const year1967 = ({ data }) => {
                 {node.data.img3 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img4 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img4[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img5 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img7 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img7[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img8 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img8[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img9 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img9[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img10 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img10[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img11 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img11[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
+                  </div>
+                )}
+                {node.data.img12 && (
+                  <div className="flex justify-center w-full">
+                    <img
+                      src={node.data.img12[0].url}
+                      alt=""
+                      className="w-2/3"
+                    />
                   </div>
                 )}
                 <div className="flex">
