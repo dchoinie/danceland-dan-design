@@ -485,7 +485,7 @@ const year1957 = ({ data }) => {
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1957.childImageSharp.fluid}
-            summary="National acts that played at Danceland in 1956 include: Boyd Bennett & His Rockets, Wanda Jackson, Faron Young, Webb Pierce, Marvin Rainwater, Porter Wagoner, Hank Thompson & His Bravos Valley Boys, Red Sovine, Bill Wimberly & His Country Rhythm Boys, Bobby Lord, Jimmy & Johnny, Rusty Draper, Dick Mango & His Orchestra, Ray Pearl & His Musical Gems, Six Fat Dutchmen, “Whoopee” John Wilfahrt & His Orchestra"
+            summary="National acts that played at Danceland in 1957 include - Johnny Cash, The Everly Brothers, Gene Vincent &amp; His Blue Caps, Jerry Lee Lewis, Buddy Knox, Jimmy Bowen, Bobby Helms, Wanda Jackson, Hank Thompson &amp; His Bravos Valley Boys, Porter Wagoner, Jim Reeves, Ray Price, Marty Robbins, Leroy Van Dyke, Leon McAuliffe &amp; His Cimarron Boys, Lee Emerson, Chuck Foster &amp; His Orchestra, Guy Lombardo &amp; His Orchestra, Don Glasser &amp; His Orchestra, Six Fat Dutchmen, “Whoopee” John Wilfahrt &amp; His Orchestra"
           />
           <MonthTitle month="January" year="1957" />
           {data.january.edges.map(({ node }) => {
