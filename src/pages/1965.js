@@ -41,6 +41,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -83,6 +86,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -129,6 +135,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -171,6 +180,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -217,6 +229,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -259,6 +274,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -305,6 +323,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -347,6 +368,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -396,6 +420,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -438,6 +465,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -484,6 +514,9 @@ export const query1965 = graphql`
             img5 {
               url
             }
+            img6 {
+              url
+            }
             month
             orderId
             price
@@ -526,6 +559,9 @@ export const query1965 = graphql`
               url
             }
             img5 {
+              url
+            }
+            img6 {
               url
             }
             month
@@ -600,6 +636,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
@@ -684,6 +725,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -764,6 +810,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
@@ -848,6 +899,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -928,6 +984,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
@@ -1012,6 +1073,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1092,6 +1158,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
@@ -1176,6 +1247,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1256,6 +1332,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
@@ -1340,6 +1421,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1422,6 +1508,11 @@ const year1965 = ({ data }) => {
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1502,6 +1593,11 @@ const year1965 = ({ data }) => {
                 {node.data.img5 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img5[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                {node.data.img6 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img6[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
                 <div className="flex">
