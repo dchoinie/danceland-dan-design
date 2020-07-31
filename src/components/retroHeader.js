@@ -54,7 +54,7 @@ const RetroHeader = () => {
               </Link>
               <Link to="/earlyYears">
                 <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
-                  Early Years
+                  1926 - 1954
                 </li>
               </Link>
               <li className="relative">

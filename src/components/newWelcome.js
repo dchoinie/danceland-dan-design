@@ -2,11 +2,12 @@ import React from "react"
 
 const NewWelcome = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-24">
+    <div className="max-w-screen-xl mx-auto my-4">
       <div className="flex flex-col w-full">
+        <h2 className="text-5xl text-center">Welcome</h2>
         <div className="flex border border-gray-400 shadow-lg rounded-md">
-          <div className="flex flex-col w-1/2 p-12">
-            <p className="mb-6">
+          <div className="flex flex-col w-1/2 p-6">
+            <p className="mb-6 text-lg">
               This project began several years ago when a group of friends and I
               were having lunch and bragging about all the cool bands we saw
               back in the ‘60s. I impressed everyone when I rattled off The
@@ -19,7 +20,7 @@ const NewWelcome = () => {
               stellar array of talent in a town that size? Answer: Danceland
               Ballroom.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               The ballroom was built in 1926. It was beautiful place that
               offered top live entertainment for people in Southeastern Iowa. It
               garnered a great reputation under the tutelage of a few sharp
@@ -42,8 +43,8 @@ const NewWelcome = () => {
             </p>
           </div>
           <div className="flex border-r border-gray-400"></div>
-          <div className="flex flex-col w-1/2 p-12">
-            <p className="mb-6">
+          <div className="flex flex-col w-1/2 p-6">
+            <p className="mb-6 text-lg">
               It started out as just a list of the more popular national bands
               from the rock and roll era. Then I realized, who am I so say who
               deserved to be mentioned or not, so I decided to list every act
@@ -52,21 +53,21 @@ const NewWelcome = () => {
               years and decided I needed to include them too if I was going to
               properly tell the whole story.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               I was also able to find other items from scrap books, blogs, etc.
               All non-publicity photos and autographs on the website were taken
               or obtained at Danceland. I put it all together - publicity
               photos, the newspaper ads and added a comment or two about some of
               the artists and their current record release.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               I obtained information from the newspaper printed before the
               performances. I’m sure there were a few cancellations that I’m not
               aware of. If anyone has additional information, photos, etc. and
               would like to correct or add to the website please contact me. My
               mission is to make sure all information is correct and accurate.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               With that in mind, welcome to the website that is dedicated to
               preserving the history of Danceland Ballroom in Cedar Rapids,
               Iowa. You can view the history from the grand opening in 1926 to
@@ -74,21 +75,22 @@ const NewWelcome = () => {
               array of top acts that graced the Danceland stage through the
               years is impressive.
             </p>
+            <p className="mb-2 text-lg">Thanks for checking it out!</p>
+            <p className="mb-2 text-lg">Steve Wilson</p>
+            <p className="mb-2 text-lg">
+              Special Thanks to Ann Duggan, Dennis Hertle, Tim Canfield, Dan
+              Choiniere, Tate Preston, Kathy Wall
+            </p>
           </div>
         </div>
         <div className="flex flex-col items-center w-full mt-6">
-          <h4 className="text-5xl text-center mb-6 text-red-600 oswald tracking-tight uppercase">
+          <h4 className="text-5xl text-center mb-6 text-red-600 oswald tracking-tight uppercase italic">
             It’s all here - the national acts, the local talent, the hits, the
             misses – the memories.
           </h4>
-          <p className="text-2xl text-gray-800">Thanks for checking it out!</p>
-          <p className="text-gray-700">- Steve Wilson</p>
-          <p className="text-sm mt-6 italic text-gray-600">
-            Special Thanks to Ann Duggan, Dennis Hertle, Tim Canfield, Dan
-            Choiniere, Tate Preston, Kathy Wall
-          </p>
         </div>
       </div>
+      <hr className="style-eight" />
     </div>
   )
 }

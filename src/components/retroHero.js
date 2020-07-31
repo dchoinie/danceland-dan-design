@@ -37,7 +37,7 @@ const RetroHero = () => {
             <br /> <span className="text-red-600">A Midwest Ballroom</span>
           </h1>
           <div className="w-1/4 border-t border-gray-400"></div>
-          <p className="text-gray-600 mt-3">By: Steve Wilson</p>
+          <p className="text-gray-800 mt-3 text-2xl">Steve Wilson</p>
         </div>
         <div className="flex w-1/2 bg-red-600 self-center rounded-md shadow-lg">
           <Img

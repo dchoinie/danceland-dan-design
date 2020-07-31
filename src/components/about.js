@@ -20,15 +20,16 @@ const About = () => {
   `)
   return (
     <div className="bg-transparent">
-      <div className="max-w-screen-xl mx-auto py-24">
+      <div className="max-w-screen-xl mx-auto py-4">
         <div className="flex flex-col items-center">
           <h2 className="text-6xl leading-none text-gray-800">Danceland Bio</h2>
           <div className="w-1/5 border-t-2 border-red-600 my-2"></div>
-          <p className="text-gray-600 text-center max-w-xl">
+          <p className="text-gray-700 text-center max-w-2xl text-2xl">
             Learn more about the history of "Iowa's Smartest Ballroom" located
-            in the heart of downtown Cedar Rapids, IA spanning from 1926 - 1968.
+            in the heart of downtown Cedar Rapids, Iowa spanning from 1926 -
+            1968.
           </p>
-          <div className="bg-red-600 rounded shadow-md w-1/2 my-12">
+          <div className="bg-red-600 rounded shadow-md w-1/2 my-6">
             <Img
               fluid={data.front.childImageSharp.fluid}
               className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
@@ -41,6 +42,9 @@ const About = () => {
             Danceland Bio <FaAngleRight className="self-center ml-2" />
           </Link>
         </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
+        <hr className="style-eight my-6" />
       </div>
     </div>
   )

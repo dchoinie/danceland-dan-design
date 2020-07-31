@@ -5,13 +5,13 @@ import Texture from "../images/textures/vintage_speckles.png"
 const YearSelectors = () => {
   return (
     <div className="bg-transparent">
-      <div className="max-w-screen-xl m-auto py-24">
+      <div className="max-w-screen-xl m-auto py-4">
         <div className="flex flex-col items-center mb-12">
           <h2 className="text-6xl leading-none text-gray-800">
             Search By Year
           </h2>
           <div className="w-1/5 border-t-2 border-red-600 my-2"></div>
-          <p className="text-gray-600 max-w-lg mx-auto text-center">
+          <p className="text-gray-700 max-w-lg mx-auto text-center text-2xl">
             Browse through the history of Danceland with artists, dates, prices,
             images and most of all...memories.
           </p>
@@ -38,6 +38,9 @@ const YearSelectors = () => {
           <YearSelector year="1967" to="1967" />
           <YearSelector year="1968" to="1968" />
         </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
+        <hr className="style-eight my-6" />
       </div>
     </div>
   )
