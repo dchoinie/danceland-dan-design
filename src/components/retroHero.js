@@ -31,25 +31,20 @@ const RetroHero = () => {
         className="flex w-full h-full"
         style={{ height: "calc(100vh - 189.23px)" }}
       >
-        <div className="flex flex-col w-1/2 h-full justify-center items-center ">
-          <h1 className="text-6xl text-center text-gray-800 leading-tight">
+        <div className="flex flex-col text-center w-1/2 h-full justify-center items-center">
+          <h1 className="text-5xl text-gray-800 leading-tight relative z-10">
             The History Of
-            <br />{" "}
-            <span className="text-red-600 whitespace-no-wrap">
-              A Midwest Ballroom
-            </span>
+            <br /> <span className="text-red-600">A Midwest Ballroom</span>
           </h1>
-          <div className="w-1/4 border-t-2 border-cp-gray"></div>
+          <div className="w-1/4 border-t border-gray-400"></div>
           <small className="text-gray-600 mt-3">By: Steve Wilson</small>
         </div>
-        <div className="flex h-full w-1/2 self-center">
-          <BackgroundImage
-            fluid={imageStack}
-            className="w-full h-full shadow-md"
-            style={{
-              clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
-            }}
-          ></BackgroundImage>
+        <div className="flex w-1/2 bg-red-600 self-center rounded-md shadow-lg">
+          <Img
+            fluid={data.front.childImageSharp.fluid}
+            className="w-full self-center rounded-md shadow-lg transform -translate-x-4 -translate-y-4 border-r-4 border-b-4 border-white"
+            style={{ maxHeight: "500px" }}
+          />
         </div>
       </div>
     </div>

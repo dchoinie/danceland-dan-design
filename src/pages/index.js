@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Texture from "../images/textures/dust_scratches.png"
 import Hero from "../components/hero"
 import Welcome from "../components/welcome"
+import NewWelcome from "../components/newWelcome"
 import YearSelectors from "../components/yearSelectors"
 import PostersHome from "../components/postersHome"
 import Bandstand from "../components/bandstand"
@@ -15,7 +16,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <HomeLayout>
       <RetroHero />
-      <Welcome />
+      <NewWelcome />
       <YearSelectors />
       <About />
       <PostersHome />

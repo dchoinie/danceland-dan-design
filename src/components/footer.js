@@ -8,12 +8,30 @@ const Footer = () => {
         <div className="flex">
           <ul className="flex flex-col">
             <li className="text-white">Navigate</li>
-            <li className="text-gray-500">Home</li>
-            <li className="text-gray-500">Early Years</li>
-            <li className="text-gray-500">Posters</li>
-            <li className="text-gray-500">Danceland Bandstand</li>
-            <li className="text-gray-500">About</li>
-            <li className="text-gray-500">Contact</li>
+            <li className="text-gray-500">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/">Bio</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/earlyYears">Early Years</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/posters">Posters</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="danceland-bandstand">Danceland Bandstand</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/managers">Manager</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/local-bands">Local Bands</Link>
+            </li>
+            <li className="text-gray-500">
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col text-gray-500">
