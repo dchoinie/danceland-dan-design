@@ -361,11 +361,7 @@ export const query1955 = graphql`
 const year1955 = ({ data }) => {
   return (
     <Layout>
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-        }}
-      >
+      <div>
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1955.childImageSharp.fluid}

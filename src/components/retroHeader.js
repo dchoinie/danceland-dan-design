@@ -40,8 +40,8 @@ const RetroHeader = () => {
           </Link>
         </div>
         <div className="max-w-screen-xl mx-auto mt-6">
-          <div className="flex w-full border-double border-t-4 border-b-2 border-gray-700 py-2">
-            <ul className="flex justify-between w-full text-lg uppercase text-gray-700">
+          <div className="flex w-full border-b border-t border-gray-700 py-2">
+            <ul className="flex justify-between w-full text-xl uppercase text-gray-700">
               <Link to="/">
                 <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
                   Home

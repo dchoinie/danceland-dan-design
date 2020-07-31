@@ -73,6 +73,9 @@ module.exports = {
           {
             family: `Oswald`,
           },
+          {
+            family: `Abel`,
+          },
         ],
       },
     },

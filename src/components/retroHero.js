@@ -31,13 +31,13 @@ const RetroHero = () => {
         className="flex w-full h-full"
         style={{ height: "calc(100vh - 189.23px)" }}
       >
-        <div className="flex flex-col text-center w-1/2 h-full justify-center items-center">
-          <h1 className="text-5xl text-gray-800 leading-tight relative z-10">
+        <div className="flex flex-col text-center w-1/2 h-full justify-center items-center oswald">
+          <h1 className="text-5xl text-gray-800 leading-tight uppercase tracking-tight">
             The History Of
             <br /> <span className="text-red-600">A Midwest Ballroom</span>
           </h1>
           <div className="w-1/4 border-t border-gray-400"></div>
-          <small className="text-gray-600 mt-3">By: Steve Wilson</small>
+          <p className="text-gray-600 mt-3">By: Steve Wilson</p>
         </div>
         <div className="flex w-1/2 bg-red-600 self-center rounded-md shadow-lg">
           <Img

@@ -5,7 +5,7 @@ const NewWelcome = () => {
     <div className="max-w-screen-xl mx-auto my-24">
       <div className="flex flex-col w-full">
         <div className="flex border border-gray-400 shadow-lg rounded-md">
-          <div className="flex flex-col w-1/2 p-6">
+          <div className="flex flex-col w-1/2 p-12">
             <p className="mb-6">
               This project began several years ago when a group of friends and I
               were having lunch and bragging about all the cool bands we saw
@@ -42,7 +42,7 @@ const NewWelcome = () => {
             </p>
           </div>
           <div className="flex border-r border-gray-400"></div>
-          <div className="flex flex-col w-1/2 p-6">
+          <div className="flex flex-col w-1/2 p-12">
             <p className="mb-6">
               It started out as just a list of the more popular national bands
               from the rock and roll era. Then I realized, who am I so say who
@@ -77,7 +77,7 @@ const NewWelcome = () => {
           </div>
         </div>
         <div className="flex flex-col items-center w-full mt-6">
-          <h4 className="text-5xl text-center mb-6 text-red-600">
+          <h4 className="text-5xl text-center mb-6 text-red-600 oswald tracking-tight uppercase">
             It’s all here - the national acts, the local talent, the hits, the
             misses – the memories.
           </h4>
