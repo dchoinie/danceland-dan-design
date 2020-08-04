@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
+import StickyYear from "../components/stickyYear"
 
 export const query1955 = graphql`
   {
@@ -361,6 +362,7 @@ const year1955 = ({ data }) => {
   return (
     <Layout>
       <div>
+        <StickyYear year="1955" />
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1955.childImageSharp.fluid}
@@ -376,7 +378,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -412,7 +414,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -483,7 +485,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -519,7 +521,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -555,7 +557,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -591,7 +593,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -627,7 +629,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -663,7 +665,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -699,7 +701,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -735,7 +737,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -771,7 +773,7 @@ const year1955 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -809,7 +811,7 @@ const year1955 = ({ data }) => {
                     <p className="text-xl text-red-600">
                       {node.data.fullDate} / {node.data.weekday}
                     </p>
-                    <h2 className="text-5xl leading-tight text-gray-700 flex text-center">
+                    <h2 className="text-5xl leading-none text-gray-700 flex text-center">
                       {node.data.artist}
                     </h2>
                   </>

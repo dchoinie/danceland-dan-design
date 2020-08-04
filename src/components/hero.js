@@ -45,7 +45,7 @@ const Hero = () => {
             className="flex flex-col items-center py-4"
             style={{ backdropFilter: "blur(5px)" }}
           >
-            <h1 className="text-gray-200 text-3xl">The History Of</h1>
+            <h1 className="text-gray-200 text-3xl">Danceland</h1>
             <Img
               fluid={data.logo.childImageSharp.fluid}
               className="my-6"

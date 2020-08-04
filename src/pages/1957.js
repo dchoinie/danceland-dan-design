@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
-import Texture from "../images/textures/vintage_speckles.png"
+import StickyYear from "../components/stickyYear"
 
 export const query1957 = graphql`
   {
@@ -482,6 +482,7 @@ const year1957 = ({ data }) => {
   return (
     <Layout>
       <div>
+        <StickyYear year="1957" />
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1957.childImageSharp.fluid}

@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
-import Texture from "../images/textures/vintage_speckles.png"
+import StickyYear from "../components/stickyYear"
 
 export const query1967 = graphql`
   {
@@ -272,6 +272,7 @@ export const query1967 = graphql`
             }
             audio2title
             audio2artist
+            video
           }
         }
       }
@@ -806,6 +807,7 @@ const year1967 = ({ data }) => {
   return (
     <Layout>
       <div>
+        <StickyYear year="1967" />
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1967.childImageSharp.fluid}
@@ -821,7 +823,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -950,7 +952,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1079,7 +1081,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1208,7 +1210,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1288,6 +1290,33 @@ const year1967 = ({ data }) => {
                     />
                   </div>
                 )}
+                {node.data.video && (
+                  <>
+                    <div
+                      className="w-3/4"
+                      style={{
+                        position: "relative",
+                        paddingBottom: "56.25%",
+                        height: 0,
+                      }}
+                    >
+                      <iframe
+                        src={node.data.video}
+                        frameborder="0"
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                        }}
+                      ></iframe>
+                    </div>
+                    <p className="text-gray-700 text-lg text-center">
+                      Harlem Shuffle - The Fabulous Flippers
+                    </p>
+                  </>
+                )}
                 <div className="flex">
                   {node.data.audio1 && (
                     <div className="flex-col mr-6">
@@ -1337,7 +1366,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1466,7 +1495,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1595,7 +1624,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1724,7 +1753,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1853,7 +1882,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -1982,7 +2011,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -2111,7 +2140,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -2240,7 +2269,7 @@ const year1967 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.fullDate} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl text-gray-700 flex text-center leading-tight">
+                <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
