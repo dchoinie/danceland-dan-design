@@ -49,6 +49,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -91,6 +92,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -133,6 +135,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -175,6 +178,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -217,6 +221,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -259,6 +264,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -301,6 +307,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -343,6 +350,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -388,6 +396,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -430,6 +439,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -472,6 +482,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -514,6 +525,7 @@ export const query1958 = graphql`
             price
             weekday
             year
+            day
             audio1 {
               url
             }
@@ -544,7 +556,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -612,7 +624,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -680,7 +692,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -748,7 +760,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -816,7 +828,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -884,7 +896,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -952,7 +964,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1020,7 +1032,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1088,7 +1100,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1156,7 +1168,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1224,7 +1236,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1292,7 +1304,7 @@ const year1958 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.fullDate} / {node.data.weekday}
+                  {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
                 <h2 className="text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
