@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-red-600 py-8 text-white">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-center w-full">
-          <ul className="flex">
+          <ul className="flex flex-col text-center lg:flex-row">
             <li className="mx-6 text-3xl">
               <Link to="/steve-wilson">Steve Wilson</Link>
             </li>

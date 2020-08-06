@@ -493,7 +493,7 @@ export const query1957 = graphql`
 const year1957 = ({ data }) => {
   return (
     <Layout>
-      <div>
+      <div className="px-6 lg:px-0">
         <StickyYear year="1957" />
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
@@ -510,7 +510,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center leading-none">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center leading-none">
                   {node.data.artist}
                 </h2>
                 {node.data.price && (
@@ -582,7 +582,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -650,7 +650,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -718,7 +718,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -786,7 +786,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -854,7 +854,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -922,7 +922,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -990,7 +990,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -1058,7 +1058,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -1126,7 +1126,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -1194,7 +1194,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}
@@ -1262,7 +1262,7 @@ const year1957 = ({ data }) => {
                 <p className="text-xl text-red-600">
                   {node.data.month} {node.data.day} / {node.data.weekday}
                 </p>
-                <h2 className="text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
+                <h2 className="text-3xl lg:text-5xl oswald tracking-tighter uppercase leading-none text-gray-700 flex text-center">
                   {node.data.artist}
                 </h2>
                 {node.data.price && <p>{node.data.price}</p>}

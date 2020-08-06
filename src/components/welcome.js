@@ -1,230 +1,98 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Texture from "../images/textures/vintage_speckles.png"
 
-const Welcome = () => {
-  const data = useStaticQuery(graphql`
-    {
-      opening: file(relativePath: { eq: "homeImages/opening.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      cbasie: file(relativePath: { eq: "homeImages/countbasie.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      cberry: file(relativePath: { eq: "homeImages/cberry.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      everly: file(relativePath: { eq: "homeImages/everly.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      guesswho: file(relativePath: { eq: "homeImages/guesswho.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      cash: file(relativePath: { eq: "homeImages/cash.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      rockCollage: file(relativePath: { eq: "collages/Collage4.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      countryCollage: file(relativePath: { eq: "collages/Collage5.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const NewWelcome = () => {
   return (
-    <div className="bg-transparent">
-      <div className="max-w-screen-xl mx-auto py-24">
-        <div className="flex">
-          <div className="flex w-1/2 mr-4 px-12">
-            <figure className="flex flex-col w-full text-xs">
-              <div className="bg-black rounded shadow-md">
-                <Img
-                  fluid={data.opening.childImageSharp.fluid}
-                  className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
-                />
-              </div>
-              <figcaption className="flex flex-col items-center text-gray-600">
-                <p>Danceland Grand Opening</p>
-                <p>August 31st, 1926</p>
-              </figcaption>
-            </figure>
+    <div className="max-w-screen-xl mx-auto my-4 px-6 lg:px-0">
+      <div className="flex flex-col w-full">
+        <h2 className="text-3xl lg:text-5xl text-center">Welcome</h2>
+        <div className="flex flex-col lg:flex-row border border-gray-400 shadow-lg rounded-md">
+          <div className="flex flex-col w-full lg:w-1/2 p-6">
+            <p className="mb-6 text-lg">
+              This project began several years ago when a group of friends and I
+              were having lunch and bragging about all the cool bands we saw
+              back in the ‘60s. I impressed everyone when I rattled off The
+              Yardbirds, Mitch Ryder &amp; The Detroit Wheels, The Hollies, The
+              Animals, ? &amp; The Mysterians, The Beau Brummels, Sam The Sham
+              &amp; The Pharaohs, The Music Machine, The McCoys, The Kingsmen,
+              The Turtles, Gary Lewis &amp; The Playboys, Lonnie Mack, Brenda
+              Lee amongst others. I grew up in the middle-sized town of Cedar
+              Rapids, Iowa (pop about 100.000). How was I able to witness that
+              stellar array of talent in a town that size? Answer: Danceland
+              Ballroom.
+            </p>
+            <p className="mb-6 text-lg">
+              The ballroom was built in 1926. It was beautiful place that
+              offered top live entertainment for people in Southeastern Iowa. It
+              garnered a great reputation under the tutelage of a few sharp
+              managers who booked an impressive lineup of big-time talent. In my
+              youth Danceland was the place to go see live rock and roll and I
+              attended often. It was suggested at that lunch years ago that
+              someone should do a book or website and document the bands that
+              played at Danceland during that time. It was also suggested if
+              anyone should do this, it should be me.
+            </p>
+            <p className="mb-6 text-lg">
+              Not realizing the scope of this project, I accepted the challenge
+              and set about gathering all the Danceland information I could
+              find. I started scouring the Danceland ads in the local newspaper,
+              the Cedar Rapids Gazette. I did this by looking through microfiche
+              at the public library. (I now live in Minnesota and the Cedar
+              Rapids library would send the microfiche up to my local
+              Minneapolis library for me to view). After I got a computer, I was
+              able to find the information I was looking for via the internet.
+            </p>
           </div>
-          <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 px-12">
-              <p className="">
-                Welcome to the website that is dedicated to preserving the
-                history of Danceland Ballroom in Cedar Rapids, Iowa. You can
-                view the history from the grand opening in 1926 to its razing in
-                1968 (urban renewal). The array of top acts that graced the
-                Danceland stage through the years is impressive to say the
-                least.
-              </p>
-              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 px-12">
-              <p>
-                The “Big Band” years saw the orchestras of Duke Ellington, Glenn
-                Miller, Count Basie, Benny Goodman, Tommy Dorsey with Frank
-                Sinatra, Louis Armstrong, Woody Herman, Gene Krupa, Les Brown
-                with Doris Day, Lawrence Welk, Sammy Kaye, Jack Teagarden, Eddy
-                Howard, Buddy Rich, Kay Kyser and Stan Kenton all swing by.
-              </p>
-              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
-            </div>
-          </div>
-          <div className="flex w-1/2 ml-4 px-12">
-            <figure className="flex flex-col w-full text-xs">
-              <div className="bg-black rounded shadow-md">
-                <Img
-                  fluid={data.cbasie.childImageSharp.fluid}
-                  className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
-                />
-              </div>
-              <figcaption className="flex flex-col items-center text-gray-600">
-                <p>Count Basie &amp; His Orchestra</p>
-                <p>April 9th, 1945</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex w-1/2 self-center mr-4 px-12">
-            <figure className="flex w-full flex-col text-xs">
-              <div className="bg-black rounded shadow-md">
-                <Img
-                  fluid={data.rockCollage.childImageSharp.fluid}
-                  className="w-full self-center transform translate-x-4 -translate-y-4 rounded"
-                />
-              </div>
-              <figcaption className="flex flex-col w-2/3 mx-auto text-center items-center text-gray-600">
-                <p>
-                  The Animals, Four Seasons, Everly Brothers, Jerry Lee Lewis,
-                  Roy Orbison, Beach Boys
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="flex w-1/2">
-            <div className="text-xl text-gray-700 p-12 self-center">
-              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
-              <p>
-                The rock &amp; roll era started in 1955 with the booking of Bill
-                Haley &amp; the Comets. Soon followed by Chuck Berry, Jerry Lee
-                Lewis, Carl Perkins, Gene Vincent &amp; The Blue Caps, Eddie
-                Cochran, Del Shannon, The Everly Brothers. Neil Sedaka, Bobby
-                Darin, 4 Seasons, Chubby Checker, Bobby Rydell, Duane Eddy, The
-                Ventures, Wanda Jackson, Gene Pitney, Dion &amp; The Belmonts,
-                Roy Orbison, Frankie Avalon, Brenda Lee, Jan &amp; Dean, Ray
-                Stevens, Bobby Vee, The Guess Who, Jr. Walker &amp; The All
-                Stars, The Turtles, Gary Lewis &amp; The Playboys, The Ronettes,
-                The Beach Boys, Mitch Ryder &amp; The Detroit Wheels, The Music
-                Machine, The Animals, The Hollies, The Yardbirds and many more.
-              </p>
-              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex w-1/2">
-            <div className="text-xl self-center text-gray-700 px-12">
-              <p>
-                Not to forget the great country stars that includes Bob Wills
-                &amp; His Texas Playboys, Kitty Wells, Webb Pierce, Buck Owens,
-                Hank Thompson, Johnny Cash, Porter Wagoner, Marty Robbins, Don
-                Gibson, Johnny Horton, Faron Young, Jim Reeves, Conway Twitty,
-                Jimmy Dean and Roger Miller.
-              </p>
-              <div className="flex border-t-2 border-red-600 w-1/2 my-4"></div>
-            </div>
-          </div>
-          <div className="flex w-1/2 ml-4 px-12">
-            <figure className="flex flex-col w-full text-xs">
-              <div className="bg-black rounded shadow-md">
-                <Img
-                  fluid={data.countryCollage.childImageSharp.fluid}
-                  className="w-full self-center transform -translate-x-4 -translate-y-4 rounded"
-                />
-              </div>
-              <figcaption className="flex flex-col w-2/3 mx-auto text-center items-center text-gray-600">
-                <p>
-                  Marty Robbins, Jimmy Dean, Johnny Cash, Jim Reeves, Buck
-                  Owens, Kitty Wells
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div className="bg-red-600 py-4">
-        <div className="flex flex-col w-full items-center max-w-screen-xl mx-auto">
-          <h2 className="text-5xl text-center text-white uppercase leading-tight">
-            It’s all here - the national acts, the local talent, the hits, the
-            misses – the memories. Check It Out!
-          </h2>
-          <div className="border-t border-white w-1/4 my-2"></div>
-          <p className="text-center text-black">
-            {/* <em>
+          <div className="flex border-r border-gray-400"></div>
+          <div className="flex flex-col w-full lg:w-1/2 p-6">
+            <p className="mb-6 text-lg">
+              It started out as just a list of the more popular national bands
+              from the rock and roll era. Then I realized, who am I so say who
+              deserved to be mentioned or not, so I decided to list every act
+              that performed there from 1955-1968. Then I started to look at all
+              the famous big bands and orchestras that played there in the early
+              years and decided I needed to include them too if I was going to
+              properly tell the whole story.
+            </p>
+            <p className="mb-6 text-lg">
+              I was also able to find other items from scrap books, blogs, etc.
+              All non-publicity photos and autographs on the website were taken
+              or obtained at Danceland. I put it all together - publicity
+              photos, the newspaper ads and added a comment or two about some of
+              the artists and their current record release.
+            </p>
+            <p className="mb-6 text-lg">
+              I obtained information from the newspaper printed before the
+              performances. I’m sure there were a few cancellations that I’m not
+              aware of. If anyone has additional information, photos, etc. and
+              would like to correct or add to the website please contact me. My
+              mission is to make sure all information is correct and accurate.
+            </p>
+            <p className="mb-6 text-lg">
+              With that in mind, welcome to the website that is dedicated to
+              preserving the history of Danceland Ballroom in Cedar Rapids,
+              Iowa. You can view the history from the grand opening in 1926 to
+              its razing in 1968 (urban renewal). I’m sure you’ll agree that the
+              array of top acts that graced the Danceland stage through the
+              years is impressive.
+            </p>
+            <p className="mb-2 text-lg">Thanks for checking it out!</p>
+            <p className="mb-2 text-lg">Steve Wilson</p>
+            <p className="mb-2 text-lg">
               Special Thanks to Ann Duggan, Dennis Hertle, Tim Canfield, Dan
               Choiniere, Tate Preston, Kathy Wall
-            </em> */}
-          </p>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center w-full mt-6">
+          <h4 className="text-3xl lg:text-5xl text-center mb-6 text-red-600 oswald tracking-tight uppercase italic">
+            It’s all here - the national acts, the local talent, the hits, the
+            misses – the memories.
+          </h4>
         </div>
       </div>
+      <hr className="style-eight" />
     </div>
   )
 }
 
-export default Welcome
+export default NewWelcome

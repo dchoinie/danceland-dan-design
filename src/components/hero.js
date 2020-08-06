@@ -9,84 +9,47 @@ const Hero = () => {
       front: file(relativePath: { eq: "front.jpg" }) {
         childImageSharp {
           fluid {
-            srcSet
             src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      logo: file(relativePath: { eq: "danceland_logo.png" }) {
-        childImageSharp {
-          fluid {
             srcSet
-            src
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
-
-  const backgroundStack = [
-    `linear-gradient(to top right, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0))`,
+  const imageStack = [
+    `linear-gradient(to right, rgba(229, 62, 62, 0.2), rgba(229, 62, 62, 0.2))`,
     data.front.childImageSharp.fluid,
   ]
-
-  const newStack = [
-    `linear-gradient(rgba(153, 44, 66, 1), rgba(153, 44, 66, 1))`,
-    data.front.childImageSharp.fluid,
-  ]
-
   return (
-    <BackgroundImage fluid={backgroundStack}>
-      <div className="h-screen" style={{ marginTop: "-79px" }}>
-        <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto h-full">
-          <div
-            className="flex flex-col items-center py-4"
-            style={{ backdropFilter: "blur(5px)" }}
-          >
-            <h1 className="text-gray-200 text-3xl">Danceland</h1>
-            <Img
-              fluid={data.logo.childImageSharp.fluid}
-              className="my-6"
-              style={{ width: "40vw" }}
-            />
-            <h1 className="text-gray-200 text-3xl">A Midwest Ballroom</h1>
-            <small className="text-gray-400 mt-2">By: Steve Wilson</small>
-          </div>
+    <div
+      className="hidden lg:block max-w-screen-xl mx-auto bg-transparent"
+      style={{ height: "calc(100vh - 189.23px)" }}
+    >
+      <div
+        className="flex w-full h-full"
+        style={{ height: "calc(100vh - 189.23px)" }}
+      >
+        <div className="flex flex-col w-1/2 text-center h-full justify-center items-center oswald">
+          <h1 className="text-5xl text-gray-800 leading-tight uppercase tracking-tight">
+            Danceland
+          </h1>
+          <h2 className="text-red-600 text-5xl leading-tight">
+            The History Of A<br /> Midwest Ballroom
+          </h2>
+          <div className="w-1/4 border-t border-gray-400"></div>
+          <p className="text-gray-800 mt-3 text-2xl">Steve Wilson</p>
+        </div>
+        <div className="flex w-1/2 bg-red-600 self-center rounded-md shadow-lg m-6">
+          <Img
+            fluid={data.front.childImageSharp.fluid}
+            className="w-full self-center rounded-md shadow-lg transform -translate-x-4 -translate-y-4 border-r-4 border-b-4 border-white"
+            style={{ maxHeight: "500px" }}
+          />
         </div>
       </div>
-    </BackgroundImage>
+    </div>
   )
 }
 
 export default Hero
-
-{
-  /* <div
-      className="w-full bg-cp-blue"
-      style={{ height: "calc(100vh - 102.23px)" }}
-    >
-      <div className="flex justify-between h-full max-w-screen-xl mx-auto">
-        <div className="flex flex-col self-center">
-          <h1 className="text-10xl geist text-cp-white leading-none">
-            Danceland
-          </h1>
-          <h2 className="solway text-2xl text-cp-orange">
-            The History Of A Midwest Ballroom
-          </h2>
-          <p className="text-gray-500">By: Steve Wilson</p>
-        </div>
-        <div className="flex w-1/2">
-          <Img
-            fluid={data.front.childImageSharp.fluid}
-            className="w-full self-center border-4 border-cp-red rounded-md"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(153, 44, 66, 1), rgba(153, 44, 66, 1))",
-            }}
-          />
-        </div>
-      </div>
-    </div> */
-}

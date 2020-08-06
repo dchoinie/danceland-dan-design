@@ -10,7 +10,7 @@ export default class yearHeader extends Component {
 
   render() {
     return (
-      <div className="flex flex-col lg:flex-row p-6 lg:px-0 z-0">
+      <div className="flex flex-col lg:flex-row lg:p-6 mb-6 lg:mb-0">
         <div className="flex w-full lg:w-1/2 lg:pr-4">
           <Img fluid={this.props.img} className="w-full" />
         </div>

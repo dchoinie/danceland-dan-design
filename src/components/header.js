@@ -1,19 +1,13 @@
 import React, { useState } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import {
-  FaSearch,
-  FaAngleDown,
-  FaAngleUp,
-  FaRegCalendarAlt,
-} from "react-icons/fa"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { FaStar, FaSearch, FaAngleDown, FaAngleUp } from "react-icons/fa"
 import Img from "gatsby-image"
-import Front from "../images/front.jpg"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "danceland_logo.png" }) {
+      logo: file(relativePath: { eq: "danceland_logo_black.png" }) {
         childImageSharp {
           fluid {
             src
@@ -25,132 +19,125 @@ const Header = () => {
     }
   `)
   return (
-    <header
-      className="relative z-40"
-      style={{
-        backgroundImage: `linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)) ,url(${Front})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="flex flex-col w-full z-40 relative py-4 max-w-screen-xl mx-auto">
-        <Link to="/" className="flex justify-center mb-4 text-main-yellow">
-          <p className="text-2xl geist self-center">1926</p>
-          <Img fluid={data.logo.childImageSharp.fluid} className="w-1/4" />
-          <p className="text-2xl geist self-center">1968</p>
-        </Link>
-        <ul className="flex justify-between w-full text-xl font-extrabold text-white">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/">Bio</Link>
-          </li>
-          <li>
-            <Link to="/earlyYears">Early Years</Link>
-          </li>
-          <li>
-            <button
-              className="flex relative focus:outline-none solway font-extrabold"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              Search By Year
-              {isOpen === true ? (
-                <FaAngleUp className="self-center ml-1" />
-              ) : (
-                <FaAngleDown className="self-center ml-1" />
-              )}
-            </button>
-            {isOpen && (
-              <div className="flex absolute w-64 bg-white text-gray-800 mt-3 rounded-md shadow-md">
-                <div className="flex justify-around w-full p-4">
-                  <ul className="flex flex-col border-r border-gray-700 pr-6">
-                    <li className="mb-1">
-                      <Link to="/1955" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1955
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/1956" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1956
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/1957" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1957
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/1958" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1958
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1959
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1960
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1961
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul className="flex flex-col">
-                    <li className="mb-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1962
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1963
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1964
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1965
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1966
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1967
-                      </Link>
-                    </li>
-                    <li className="my-1">
-                      <Link to="/" className="flex">
-                        <FaRegCalendarAlt className="self-center mr-2" /> 1968
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            )}
-          </li>
-          <li>
-            <Link to="/posters">Posters</Link>
-          </li>
-          <li>
-            <Link to="/">Danceland Bandstand</Link>
-          </li>
-        </ul>
+    <div className="hidden lg:block bg-transparent">
+      <div className="py-4">
+        <div className="flex flex-col items-center">
+          <Link to="/">
+            <Img
+              fluid={data.logo.childImageSharp.fluid}
+              className="w-64"
+              style={{ transform: "rotate(-5deg)" }}
+            />
+          </Link>
+        </div>
+        <div className="max-w-screen-xl mx-auto mt-6">
+          <div className="flex w-full border-b border-t border-gray-700 py-2">
+            <ul className="flex justify-between w-full text-xl uppercase text-gray-700">
+              <Link to="/">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Home
+                </li>
+              </Link>
+              <Link to="/bio">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Bio
+                </li>
+              </Link>
+              <Link to="/earlyYears">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  1926 - 1954
+                </li>
+              </Link>
+              <li className="relative">
+                <button
+                  className="flex uppercase hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black focus:outline-none"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Search By Year{" "}
+                  {isOpen === true ? (
+                    <FaAngleUp className="self-center ml-2" />
+                  ) : (
+                    <FaAngleDown className="self-center ml-2" />
+                  )}
+                </button>
+                {isOpen && (
+                  <div className="absolute w-full z-40">
+                    <div className="flex w-full justify-between bg-gray-100 p-2 rounded-md shadow-md">
+                      <div className="flex flex-col w-1/2 justify-center text-center">
+                        <Link to="/1955" className="hover:text-red-600">
+                          1955
+                        </Link>
+                        <Link to="/1956" className="hover:text-red-600">
+                          1956
+                        </Link>
+                        <Link to="/1957" className="hover:text-red-600">
+                          1957
+                        </Link>
+                        <Link to="/1958" className="hover:text-red-600">
+                          1958
+                        </Link>
+                        <Link to="/1959" className="hover:text-red-600">
+                          1959
+                        </Link>
+                        <Link to="/1960" className="hover:text-red-600">
+                          1960
+                        </Link>
+                        <Link to="/1961" className="hover:text-red-600">
+                          1961
+                        </Link>
+                      </div>
+                      <div className="flex flex-col w-1/2 justify-center text-center">
+                        <Link to="/1962" className="hover:text-red-600">
+                          1962
+                        </Link>
+                        <Link to="/1963" className="hover:text-red-600">
+                          1963
+                        </Link>
+                        <Link to="/1964" className="hover:text-red-600">
+                          1964
+                        </Link>
+                        <Link to="/1965" className="hover:text-red-600">
+                          1965
+                        </Link>
+                        <Link to="/1966" className="hover:text-red-600">
+                          1966
+                        </Link>
+                        <Link to="/1967" className="hover:text-red-600">
+                          1967
+                        </Link>
+                        <Link to="/1968" className="hover:text-red-600">
+                          1968
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </li>
+              <Link to="/posters">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Posters
+                </li>
+              </Link>
+              <Link to="danceland-bandstand">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Danceland Bandstand
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Managers
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
+                  Local Bands
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   )
 }
 

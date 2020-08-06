@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import Texture from "../images/textures/vintage_speckles.png"
 
 const Posters = () => {
   const data = useStaticQuery(graphql`
@@ -70,16 +69,12 @@ const Posters = () => {
   `)
   return (
     <Layout>
-      <div
-        style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${Texture})`,
-        }}
-      >
+      <div className="px-6 lg:px-0">
         <div className="max-w-screen-xl mx-auto py-24">
           <div className="flex flex-col">
-            <div className="flex mb-12">
-              <div className="flex flex-col items-center w-1/2">
-                <h2 className="text-5xl geist self-center">
+            <div className="flex flex-col lg:flex-row mb-12">
+              <div className="flex flex-col items-center w-full lg:w-1/2 text-center lg:text-left">
+                <h2 className="text-3xl lg:text-5xl geist self-center">
                   The Artisty Of Andy Jennings
                 </h2>
                 <Img
@@ -87,7 +82,7 @@ const Posters = () => {
                   className="w-1/2"
                 />
               </div>
-              <div className="flex flex-col w-1/2">
+              <div className="flex flex-col w-full lg:w-1/2">
                 <p className="text-xl text-gray-700 mb-2">
                   At the entrance to the ballroom Danceland patrons were greeted
                   by a poster that would announce upcoming or current shows.
@@ -103,7 +98,7 @@ const Posters = () => {
               </div>
             </div>
           </div>
-          <div className="w-full grid grid-cols-3 gap-12">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
             {data.andy.edges.map(({ node }) => {
               return (
                 <div key={node.id} className="w-full">
@@ -120,10 +115,10 @@ const Posters = () => {
               )
             })}
           </div>
-          <h2 className="text-6xl geist text-center my-6">
+          <h2 className="text-3xl lg:text-6xl geist text-center my-6">
             Non-Andy Jennings Posters
           </h2>
-          <div className="w-full grid grid-cols-3 gap-12">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
             {data.nonAndy.edges.map(({ node }) => {
               return (
                 <div key={node.id} className="w-full">

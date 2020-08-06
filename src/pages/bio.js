@@ -40,7 +40,7 @@ const Bio = () => {
   `)
   return (
     <Layout>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="px-6 lg:px-0 max-w-screen-xl mx-auto">
         <div className="grid grid-cols-3 gap-6 mt-12">
           <Img
             fluid={data.bio1.childImageSharp.fluid}

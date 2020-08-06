@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Header from "./retroHeader"
+import Header from "./header"
+import MobileHeader from "./mobileHeader"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <Header />
+      <MobileHeader />
       {children}
       <Footer />
     </>
