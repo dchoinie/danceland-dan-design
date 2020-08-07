@@ -151,6 +151,10 @@ module.exports = {
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `data1968`,
           },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `bandstand`,
+          },
         ],
       },
     },
