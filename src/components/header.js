@@ -123,12 +123,12 @@ const Header = () => {
                   Danceland Bandstand
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="/managers">
                 <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
                   Managers
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="/local-bands">
                 <li className="hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black">
                   Local Bands
                 </li>
