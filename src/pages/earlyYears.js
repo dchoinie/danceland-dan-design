@@ -78,8 +78,8 @@ const Hit = props => {
   return (
     <div className="px-6 lg:px-0 my-6">
       <div className="flex flex-col justify-between h-full items-center rounded-md my-2 mx-auto py-6 lg:p-6">
-        <p className="text-xl text-red-600">{props.hit.data.fullDate}</p>
-        <h2 className="text-3xl lg:text-6xl text-gray-800 flex text-center geist">
+        <p className="text-xl text-gray-700">{props.hit.data.fullDate}</p>
+        <h2 className="text-3xl lg:text-6xl text-gray-800 flex text-center geist leading-none">
           {props.hit.data.artist}
         </h2>
         {props.hit.data.img1 && (

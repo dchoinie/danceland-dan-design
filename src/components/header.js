@@ -19,7 +19,7 @@ const Header = () => {
     }
   `)
   return (
-    <div className="hidden lg:block bg-transparent">
+    <div className="hidden lg:block bg-transparent" id="nav">
       <div className="py-4">
         <div className="flex flex-col items-center">
           <Link to="/">

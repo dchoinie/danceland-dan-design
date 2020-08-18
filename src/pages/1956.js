@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import YearTitle from "../components/yearTitle"
 import MonthTitle from "../components/monthTitle"
 import StickyYear from "../components/stickyYear"
+import ToTop from "../components/toTop"
 
 export const query1956 = graphql`
   {
@@ -49,6 +50,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -86,6 +97,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -123,6 +144,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -160,6 +191,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -197,6 +238,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -234,6 +285,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -271,6 +332,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -308,6 +379,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -348,6 +429,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -385,6 +476,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -422,6 +523,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -456,6 +567,16 @@ export const query1956 = graphql`
             }
             audio1title
             audio1artist
+            audio2 {
+              url
+            }
+            audio2title
+            audio2artist
+            audioBetween2and3 {
+              url
+            }
+            audioBetween2and3title
+            audioBetween2and3artist
           }
         }
       }
@@ -468,6 +589,7 @@ const year1956 = ({ data }) => {
     <Layout>
       <div className="px-6 lg:px-0">
         <StickyYear year="1956" />
+        <ToTop />
         <div className="max-w-screen-xl mx-auto">
           <YearTitle
             img={data.title1956.childImageSharp.fluid}
@@ -481,7 +603,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -501,16 +627,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -518,11 +639,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex flex-col lg:flex-row">
+                  {node.data.audio1 && (
+                    <div className="flex-col lg:mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col lg:ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -534,7 +697,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -554,16 +721,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -571,11 +733,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -587,7 +791,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -607,16 +815,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -624,11 +827,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -640,7 +885,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -660,16 +909,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -677,11 +921,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -693,7 +979,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -713,16 +1003,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -730,11 +1015,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -746,7 +1073,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -766,16 +1097,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -783,11 +1109,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -799,7 +1167,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -819,16 +1191,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -836,11 +1203,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -852,7 +1261,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -872,16 +1285,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -889,11 +1297,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -905,7 +1355,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -925,16 +1379,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -942,11 +1391,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -958,7 +1449,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -978,16 +1473,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -995,11 +1485,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -1011,7 +1543,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1031,16 +1567,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -1048,11 +1579,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -1064,7 +1637,11 @@ const year1956 = ({ data }) => {
                 className="flex flex-col items-center shadow-md rounded-md border border-gray-300 max-w-screen-xl mx-auto my-6 p-6 bg-white"
               >
                 <p className="text-xl text-red-600">
-                  {node.data.month} {node.data.day} / {node.data.weekday}
+                  {node.data.day && (
+                    <>
+                      {node.data.month} {node.data.day} / {node.data.weekday}
+                    </>
+                  )}
                 </p>
                 <h2 className="text-3xl lg:text-5xl text-gray-700 flex text-center leading-none">
                   {node.data.artist}
@@ -1084,16 +1661,11 @@ const year1956 = ({ data }) => {
                     <img src={node.data.img2[0].url} alt="" className="w-2/3" />
                   </div>
                 )}
-                {node.data.img3 && (
-                  <div className="flex justify-center w-full">
-                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
-                  </div>
-                )}
-                {node.data.audio1 && (
+                {node.data.audioBetween2and3 && (
                   <>
                     <div className="flex w-full justify-center mt-3">
                       <audio
-                        src={node.data.audio1[0].url}
+                        src={node.data.audioBetween2and3[0].url}
                         controls
                         controlsList="nodownload"
                         preload="true"
@@ -1101,11 +1673,53 @@ const year1956 = ({ data }) => {
                     </div>
                     <div className="flex">
                       <p className="text-gray-700 text-lg">
-                        {node.data.audio1title} - {node.data.audio1artist}
+                        {node.data.audioBetween2and3title} -{" "}
+                        {node.data.audioBetween2and3artist}
                       </p>
                     </div>
                   </>
                 )}
+                {node.data.img3 && (
+                  <div className="flex justify-center w-full">
+                    <img src={node.data.img3[0].url} alt="" className="w-2/3" />
+                  </div>
+                )}
+                <div className="flex">
+                  {node.data.audio1 && (
+                    <div className="flex-col mr-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio1[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio1title} - {node.data.audio1artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  {node.data.audio2 && (
+                    <div className="flex-col ml-6">
+                      <div className="flex w-full justify-center mt-3">
+                        <audio
+                          src={node.data.audio2[0].url}
+                          controls
+                          controlsList="nodownload"
+                          preload="true"
+                        ></audio>
+                      </div>
+                      <div className="flex justify-center">
+                        <p className="text-gray-700 text-lg text-center">
+                          {node.data.audio2title} - {node.data.audio2artist}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}

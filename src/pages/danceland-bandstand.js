@@ -59,7 +59,7 @@ export const bandstandQuery = graphql`
     }
     bandstandLogo: file(relativePath: { eq: "bandstand/bandstand.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 70) {
           src
           srcSet
           ...GatsbyImageSharpFluid
@@ -76,7 +76,7 @@ const DancelandBandstand = ({ data }) => {
         <div className="flex flex-col items-center">
           <Img
             fluid={data.bandstandLogo.childImageSharp.fluid}
-            className="w-64"
+            className="w-1/3"
           />
           <p className="text-lg my-6">
             In December 1957 Danceland’s Darlowe Olsen created a local

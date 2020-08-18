@@ -43,11 +43,11 @@ const Bio = () => {
       <div className="px-6 lg:px-0 max-w-screen-xl mx-auto">
         <div className="grid grid-cols-3 gap-6 mt-12">
           <Img
-            fluid={data.bio1.childImageSharp.fluid}
+            fluid={data.bio2.childImageSharp.fluid}
             className="w-full rounded shadow-md"
           />
           <Img
-            fluid={data.bio2.childImageSharp.fluid}
+            fluid={data.bio1.childImageSharp.fluid}
             className="w-full rounded shadow-md"
           />
           <Img

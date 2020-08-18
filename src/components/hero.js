@@ -6,9 +6,9 @@ import BackgroundImage from "gatsby-background-image"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     {
-      front: file(relativePath: { eq: "front.jpg" }) {
+      front: file(relativePath: { eq: "frontSmaller.JPG" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 70) {
             src
             srcSet
             ...GatsbyImageSharpFluid

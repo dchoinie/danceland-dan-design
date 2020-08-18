@@ -9,7 +9,7 @@ export class StickyYear extends Component {
   render() {
     return (
       <div className="fixed" style={{ bottom: 10, right: 10 }}>
-        <h6 className="text-2xl">{this.props.year}</h6>
+        <h6 className="text-xl oswald">{this.props.year}</h6>
       </div>
     )
   }
