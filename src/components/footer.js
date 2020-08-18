@@ -10,10 +10,12 @@ const Footer = () => {
             <li className="mx-6 text-3xl">
               <Link to="/steve-wilson">Steve Wilson</Link>
             </li>
-            <li className="mx-6 text-lg self-center">
+            <li className="mx-6 text-sm self-center">
               &copy; {new Date().getFullYear()} All Rights Reserved
             </li>
-            <li className="mx-6 text-3xl">Contact</li>
+            <li className="mx-6 text-3xl">
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </div>
