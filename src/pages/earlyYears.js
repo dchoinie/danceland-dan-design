@@ -9,6 +9,7 @@ import {
   Configure,
 } from "react-instantsearch-dom"
 import "instantsearch.css/themes/reset.css"
+import Algolia from "../components/algolia"
 
 const searchClient = algoliasearch(
   `E4J1WYO56U`,
@@ -60,6 +61,7 @@ class EarlyYears extends Component {
                   Explore Danceland acts between the years 1926 - 1954. Search
                   by artist name or date.
                 </h2>
+                <Algolia />
               </div>
               <SearchBox />
             </div>

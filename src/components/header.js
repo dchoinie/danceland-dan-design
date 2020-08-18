@@ -26,7 +26,7 @@ const Header = () => {
             <Img
               fluid={data.logo.childImageSharp.fluid}
               className="w-64"
-              style={{ transform: "rotate(-5deg)" }}
+              // style={{ transform: "rotate(-5deg)" }}
             />
           </Link>
         </div>
@@ -53,7 +53,7 @@ const Header = () => {
                   className="flex uppercase hover:bg-red-600 hover:text-white p-1 border-t border-b border-transparent hover:border-black focus:outline-none"
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  Search By Year{" "}
+                  1955 - 1968{" "}
                   {isOpen === true ? (
                     <FaAngleUp className="self-center ml-2" />
                   ) : (
