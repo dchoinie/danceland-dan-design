@@ -62,6 +62,12 @@ export const query1967 = graphql`
             img12 {
               url
             }
+            img13 {
+              url
+            }
+            img14 {
+              url
+            }
             month
             orderId
             price
@@ -848,6 +854,13 @@ const year1967 = ({ data }) => {
                     {node.data.price}
                   </p>
                 )}
+                {node.data.orderId === 2 ? (
+                  <div className="flex">
+                    <img src={node.data.img13[0].url} alt="" />
+                    <img src={node.data.img14[0].url} alt="" />
+                    <img src={node.data.img13[0].url} alt="" />
+                  </div>
+                ) : null}
                 {node.data.img1 && (
                   <div className="flex justify-center w-full">
                     <img src={node.data.img1[0].url} alt="" className="w-2/3" />

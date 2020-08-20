@@ -42,11 +42,11 @@ const Hero = () => {
   return (
     <div
       className="hidden lg:block max-w-screen-xl mx-auto bg-transparent"
-      style={{ height: "calc(100vh - 189.23px)" }}
+      // style={{ height: "calc(100vh - 189.23px)" }}
     >
       <div
         className="flex w-full h-full"
-        style={{ height: "calc(100vh - 189.23px)" }}
+        // style={{ height: "calc(100vh - 189.23px)" }}
       >
         <BackgroundImage
           fluid={data.background.childImageSharp.fluid}
