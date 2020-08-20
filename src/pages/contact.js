@@ -5,22 +5,22 @@ import { FaAngleRight } from "react-icons/fa"
 const Contact = () => {
   return (
     <Layout>
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex w-full my-12">
-          <div className="flex flex-col w-1/2 lg:mr-6">
-            <h2 className="text-5xl leading-none tracking-tight mb-2">
+      <div className="max-w-screen-xl mx-auto px-6 lg:px-0">
+        <div className="flex flex-col lg:flex-row w-full my-12">
+          <div className="flex flex-col w-full lg:w-1/2 lg:mr-6">
+            <h2 className="text-5xl leading-none tracking-tight mb-2 text-center lg:text-left">
               Thanks for visiting the Danceland website!
             </h2>
-            <p className="mb-2 text-lg">
+            <p className="mb-2 text-lg text-center lg:text-left">
               My mission is to accurately document the history of this legendary
               venue.
             </p>
-            <p className="text-lg">
+            <p className="text-lg text-center lg:text-left">
               Any additions, corrections or comments are welcome. Feel free to
               contact us.
             </p>
           </div>
-          <div className="flex w-1/2 lg:ml-6">
+          <div className="flex w-full lg:w-1/2 lg:ml-6">
             <form
               method="POST"
               data-netlify="true"
