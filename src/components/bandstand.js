@@ -53,8 +53,8 @@ const Bandstand = () => {
           <div className="w-1/5 border-t-2 border-red-600 my-2"></div>
           <p className="text-gray-700 max-w-5xl text-center py-6 text-xl lg:text-2xl">
             In December 1957 Danceland’s Darlowe Olsen created a local
-            television dance program that was modeled/patterned after Dick
-            Clark’s American Bandstand. He called it Danceland Bandstand, natch.
+            television dance program that was patterned after Dick Clark’s
+            American Bandstand. He called it Danceland Bandstand, natch.
           </p>
           <div className="flex justify-center w-full lg:w-3/4 py-6">
             <Img

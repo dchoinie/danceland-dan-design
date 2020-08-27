@@ -80,11 +80,11 @@ const DancelandBandstand = ({ data }) => {
           />
           <p className="text-lg my-6">
             In December 1957 Danceland’s Darlowe Olsen created a local
-            television dance program that was modeled/patterned after Dick
-            Clark’s American Bandstand. He called it Danceland Bandstand, natch.
-            The dances were held on Sunday afternoons from 2-5 PM and telecast
-            over KCRG-TV from 3-4. Local KCRG radio disc jockeys (Dave Etzel,
-            Jim Young, Jim Jensen) served as the host/emcee. The dances were for
+            television dance program that was patterned after Dick Clark’s
+            American Bandstand. He called it Danceland Bandstand, natch. The
+            dances were held on Sunday afternoons from 2-5 PM and telecast over
+            KCRG-TV from 3-4. Local KCRG radio disc jockeys (Dave Etzel, Jim
+            Young, Jim Jensen) served as the host/emcee. The dances were for
             ages 13-18. Dress-up rules applied and parents were always welcome.
             It ran for two seasons. Both seasons featured a combination of
             records hops, local live music and an occasional national act.

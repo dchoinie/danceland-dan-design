@@ -70,9 +70,9 @@ const Bio = () => {
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
             Danceland entered the rock ‘n’ roll era on October 6, 1955 with the
-            appearance of Bill Haley &amp; the Comets. The ballroom eventually
-            evolved into a rock ‘n’ roll hot spot after Darlowe Oleson and
-            Bernie Storck became the co-managers in 1956.
+            appearance of Bill Haley &amp;amp; the Comets. The ballroom
+            eventually evolved into a rock ‘n’ roll hot spot after Darlowe
+            Oleson and Bernie Storck became the co-managers in 1956.
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
@@ -81,11 +81,11 @@ const Bio = () => {
             the late ‘50s / early ‘60s the ballroom presented a “who’s who” of
             rock’s pioneers – Chuck Berry, Roy Orbison, Jerry Lee Lewis, Brenda
             Lee, The Everly Brothers, Eddie Cochran, Conway Twitty, Gene Vincent
-            &amp; his Blue Caps, Johnny Cash, Carl Perkins, Chubby Checker,
-            Bobby Vee, Del Shannon, Joey Dee &amp; the Starliters, The Ventures,
-            Bobby Darin, Wanda Jackson, Gene Pitney, The 4 Seasons, Neil Sedaka,
-            The Fendermen, Duane Eddy, Brian Hyland, Johnny &amp; the Hurricanes
-            and Bobby Rydell are but a mere sampling.
+            &amp;amp; his Blue Caps, Johnny Cash, Carl Perkins, Chubby Checker,
+            Bobby Vee, Del Shannon, Joey Dee &amp;amp; the Starliters, The
+            Ventures, Bobby Darin, Wanda Jackson, Gene Pitney, The 4 Seasons,
+            Neil Sedaka, The Fendermen, Duane Eddy, Brian Hyland, Johnny
+            &amp;amp; the Hurricanes and Bobby Rydell are but a mere sampling.
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
@@ -96,40 +96,41 @@ const Bio = () => {
             biz saying “the show must go on” applied in this case. A revamped
             lineup was rushed together to finish the remaining thirteen dates of
             the tour. The “Winter Dance Party” lineup that appeared at Danceland
-            included holdovers Dion & the Belmonts, The Crickets (with Ronnie
-            Smith on lead vocals) and Frankie Sardo who were joined by Frankie
-            Avalon and Jimmy Clanton.
+            included holdovers Dion &amp; the Belmonts, The Crickets (with
+            Ronnie Smith on lead vocals) and Frankie Sardo who were joined by
+            Frankie Avalon and Jimmy Clanton.
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
             Other 1960s hit-makers that graced the Danceland stage include (take
-            a deep breath) The Beach Boys, The Yardbirds, Mitch Ryder & the
+            a deep breath) The Beach Boys, The Yardbirds, Mitch Ryder &amp; the
             Detroit Wheels, The Animals, The Turtles, Beau Brummels, The
-            Ronettes, The Hollies, Gary Lewis & The Playboys, The Music Machine,
-            Lonnie Mack, The Strangeloves, Jr. Walker & The All Stars, The
-            Castaways, The New Colony Six, The Crystals, ? & the Mysterians, Jan
-            & Dean, The Gentrys, The Marketts, Linda Scott, Sam The Sham & the
-            Pharaohs, The Left Banke, Jay & The Americans, Lou Christie, The
-            McCoys, The Kingsmen, Guess Who, The Trashmen, Cannibal & The
-            Headhunters, Bobby Goldsboro, The Fabulous Flippers, Dee Jay & the
-            Runaways and The Velaires to name a few!
+            Ronettes, The Hollies, Gary Lewis &amp; The Playboys, The Music
+            Machine, Lonnie Mack, The Strangeloves, Jr. Walker &amp; The All
+            Stars, The Castaways, The New Colony Six, The Crystals, ? &amp; the
+            Mysterians, Jan &amp; Dean, The Gentrys, The Marketts, Linda Scott,
+            Sam The Sham &amp; the Pharaohs, The Left Banke, Jay &amp; The
+            Americans, Lou Christie, The McCoys, The Kingsmen, Guess Who, The
+            Trashmen, Cannibal &amp; The Headhunters, Bobby Goldsboro, The
+            Fabulous Flippers, Dee Jay &amp; the Runaways and The Velaires to
+            name a few!
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
-            Not to mention the great country/western stars like Bob Wills & His
-            Texas Playboys, Marty Robbins, Kitty Wells, Don Gibson, Webb Pierce,
-            Porter Wagoner, Johnny Horton, Buck Owens, Jim Reeves, Hank
+            Not to mention the great country/western stars like Bob Wills &amp;
+            His Texas Playboys, Marty Robbins, Kitty Wells, Don Gibson, Webb
+            Pierce, Porter Wagoner, Johnny Horton, Buck Owens, Jim Reeves, Hank
             Thompson, Faron Young, Jimmy Dean and Roger Miller.
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">
             The ballroom also provided a musical proving-ground that allowed
             many of the top bands in the area to “hone their skills”. Regional
-            favorites like Eddie Randall & The Downbeats, Dale Thomas & the
-            Bandera Boys, The Rock ‘N Flames, The Escorts, Al’s Untouchables,
-            The Legends, The Stompers and others all rocked Danceland’s stage as
-            headliners or served as the opening act for a national touring
-            group.
+            favorites like Eddie Randall &amp; The Downbeats, Dale Thomas &amp;
+            the Bandera Boys, The Rock ‘N Flames, The Escorts, Al’s
+            Untouchables, The Legends, The Stompers and others all rocked
+            Danceland’s stage as headliners or served as the opening act for a
+            national touring group.
           </p>
           <hr className="style-eight" />
           <p className="text-gray-800 my-8 text-lg">

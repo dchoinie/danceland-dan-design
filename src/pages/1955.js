@@ -504,21 +504,23 @@ export const query1955 = graphql`
 const year1955 = ({ data }) => {
   return (
     <Layout>
-      <BackgroundImage
-        fluid={data.background.childImageSharp.fluid}
-        style={{
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat-y",
-        }}
-      >
-        <div className="px-6 lg:px-0">
-          <StickyYear year="1955" />
-          <ToTop />
+      <div className="px-6 lg:px-0">
+        <StickyYear year="1955" />
+        <ToTop />
+        <div className="max-w-screen-xl mx-auto">
+          <YearTitle
+            img={data.title1955.childImageSharp.fluid}
+            summary="1955 was the year live rock and roll came to Cedar Rapids. The date was October 6th and the band was Bill Haley &amp; His Comets. That would signal the beginning of Danceland being the place for eastern Iowans to witness live rock and roll. Later that month Boyd Bennett &amp; His Rockets, became the second rock and rollers to make an appearance. Also gracing the Danceland stage in 1955 were the innovating orchestra of Sauter-Finegan, polka great “Whoopee” John Wilfahrt &amp; His Orchestra and Yankton South Dakota’s popular WNAX Bohemian Band. Major country acts include Pee Wee King &amp; His Golden West Cowboys and Bob Wills &amp; His Texas Playboys."
+          />
+        </div>
+        <BackgroundImage
+          fluid={data.background.childImageSharp.fluid}
+          style={{
+            backgroundSize: "contain",
+            backgroundRepeat: "repeat-y",
+          }}
+        >
           <div className="max-w-screen-xl mx-auto">
-            <YearTitle
-              img={data.title1955.childImageSharp.fluid}
-              summary="1955 was the year live rock and roll came to Cedar Rapids. The date was October 6th and the band was Bill Haley &amp; His Comets. That would signal the beginning of Danceland being the place for eastern Iowans to witness live rock and roll. Later that month Boyd Bennett &amp; His Rockets, became the second rock and rollers to make an appearance. Also gracing the Danceland stage in 1955 were the innovating orchestra of Sauter-Finegan, polka great “Whoopee” John Wilfahrt &amp; His Orchestra and Yankton South Dakota’s popular WNAX Bohemian Band. Major country acts include Pee Wee King &amp; His Golden West Cowboys and Bob Wills &amp; His Texas Playboys."
-            />
             <MonthTitle month="January" year="1955" />
             {data.january.edges.map(({ node }) => {
               return (
@@ -1606,8 +1608,8 @@ const year1955 = ({ data }) => {
               )
             })}
           </div>
-        </div>
-      </BackgroundImage>
+        </BackgroundImage>
+      </div>
     </Layout>
   )
 }

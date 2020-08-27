@@ -16,12 +16,12 @@ const NewWelcome = () => {
               &amp; The Pharaohs, The Music Machine, The McCoys, The Kingsmen,
               The Turtles, Gary Lewis &amp; The Playboys, Lonnie Mack, Brenda
               Lee amongst others. I grew up in the middle-sized town of Cedar
-              Rapids, Iowa (pop about 100.000). How was I able to witness that
+              Rapids, Iowa (pop about 100,000). How was I able to witness that
               stellar array of talent in a town that size? Answer: Danceland
               Ballroom.
             </p>
             <p className="mb-6 text-lg">
-              The ballroom was built in 1926. It was beautiful place that
+              The ballroom was built in 1926. It was a beautiful place that
               offered top live entertainment for people in Southeastern Iowa. It
               garnered a great reputation under the tutelage of a few sharp
               managers who booked an impressive lineup of big-time talent. In my
@@ -46,7 +46,7 @@ const NewWelcome = () => {
           <div className="flex flex-col w-full lg:w-1/2 p-6">
             <p className="mb-6 text-lg">
               It started out as just a list of the more popular national bands
-              from the rock and roll era. Then I realized, who am I so say who
+              from the rock and roll era. Then I realized, who am I to say who
               deserved to be mentioned or not, so I decided to list every act
               that performed there from 1955-1968. Then I started to look at all
               the famous big bands and orchestras that played there in the early
